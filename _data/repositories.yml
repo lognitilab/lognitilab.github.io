@@ -3,3 +3,9 @@ github_users:
 
 github_repos:
   - anmol1104/TA.jl
+  - anmol1104/TSP.jl
+  - anmol1104/VRP.jl
+  - anmol1104/LRP.jl
+  - anmol1104/Freight-EcoRouting
+  - anmol1104/LastMile-Resilience
+  - anmol1104/LastMile-Logistics
