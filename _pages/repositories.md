@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: GitHub users and repositories.
+description: List of GitHub users and repositories.
 nav: true
 nav_order: 4
 ---
