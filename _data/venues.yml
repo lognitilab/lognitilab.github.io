@@ -1,6 +1,17 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Book":
+  color: "#DAA520"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Book Chapter":
+  color: "#E49B0F"
+
+"Journal Article":
+  color: "#4682B4"
+
+"Policy Brief":
+  color: "#5F8575"
+
+"White Paper":
+  color: "#A95C68"
+
+"Thesis":
+  color: "#770737"
