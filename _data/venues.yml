@@ -1,8 +1,8 @@
 "Book":
-  color: "#DAA520"
+  color: "#E49B0F"
 
 "Book Chapter":
-  color: "#E49B0F"
+  color: "#DAA520"
 
 "Journal Article":
   color: "#4682B4"
