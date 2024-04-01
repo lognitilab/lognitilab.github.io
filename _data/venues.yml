@@ -1,17 +1,17 @@
 "Book":
-  color: "#E49B0F"
+  color: "#712c51"
 
 "Book Chapter":
-  color: "#DAA520"
+  color: "#b44682"
 
 "Journal Article":
-  color: "#4682B4"
+  color: "#2c5171"
 
 "Policy Brief":
-  color: "#5F8575"
+  color: "#82b446"
 
 "White Paper":
-  color: "#A95C68"
+  color: "#51712c"
 
 "Thesis":
-  color: "#770737"
+  color: "#4682B4"
