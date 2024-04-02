@@ -299,16 +299,29 @@
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "Programming Language",
+      "level": "",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
+        "Julia",
+        "Python",
+        "R",
+        "VBA",
         "Quantum Communication",
-        "Quantum Teleportation"
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Applications",
+      "level": "",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "TransCAD",
+        "Maptitude",
+        "ArcGIS",
+        "VS Code",
+        "Quantum Communication",
+        "Git"
       ]
     }
   ],
