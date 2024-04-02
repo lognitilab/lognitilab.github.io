@@ -1,81 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: 
+description: Assessing Sustainability of Last-Mile Distribution Strategies for E-commerce Deliveries in Chennai
+img: 
 importance: 1
-category: work
+category: MTech
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+The surge in internet access in the past decade has paved the way for retailers to expand their market horizon with e-commerce platforms. This rise of e-commerce has bridged the gap between the consumer and the retailer, thus improving economic viability in urban freight – first pillar of sustainability. Further, e-commerce has enabled demand consolidation and delivery route optimization, thereby enhancing environmental efficiency in urban freight – second pillar of sustainability. Moreover, e-commerce has facilitated access to vital products for otherwise disadvantaged communities, thus advancing social equity in urban freight – third pillar of sustainability. This sustainable growth potential of e-commerce has drawn a growing number of retailers to compete for market through increasingly consumer-focused services. Often such consumer-focused services necessitate frequent less-than-truckload last-mile deliveries. As a consequence, urban freight witnesses a substantial increase in distribution cost as well as transportation-related negative externalities including greenhouse gas emissions advancing climate change, and criteria pollutant emissions affecting health of communities located close to logistics clusters. Hence, consumer-focused services significantly worsen the economic viability, environmental efficiency, and social equity in urban freight. Thus, to leverage the opportunities and cope with the challenges associated with last-mile deliveries, e-retailers establish alternate last-mile distribution strategies. Unlike the conventional strategy that includes use of diesel vehicles for home deliveries, these alternate strategies could include use of electric delivery vehicles for last-mile operations, a fleet of crowdsourced delivery vehicles for last-mile delivery, consolidation facilities coupled with light-duty delivery vehicles for a multi-echelon distribution, collection-points for customer pickup, or even drones and robots for autonomous operations. Thus, the objective of this study is to assess sustainability of different last-mile distribution strategies for an e-retailer offering delivery service in Chennai. To do so, this work will employ a Continuous Approximation (CA) based last-mile distribution model developed previously, and consequently, update and modify this model to suit the regional characteristics of Chennai Metropolitan Area. With this last-mile distribution model, this work will assess a) economic viability by evaluating the total cost of distribution stemming from fixed assets and associated operations; b) environmental efficiency by estimating the distribution-related emissions; and c) social equity by establishing the social cost of these emissions, for each of the different distribution strategies.
