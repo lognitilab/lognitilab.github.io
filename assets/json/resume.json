@@ -282,5 +282,18 @@
         "World Symposium on Transport and Land Use Research"
       ]
     }
+  ],
+  "interests": [
+    {
+      "name": "Transportation Engineering",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Sustainable Transportation",
+        "Freight Transportation",
+        "City Logistics",
+        "Last-Mile",
+        "Operations Research"
+      ]
+    }
   ]
 }
