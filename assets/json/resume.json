@@ -255,5 +255,32 @@
       "url": "https://www.jstage.jst.go.jp/article/easts/12/0/12_1238/_article/-char/en",
       "summary": ""
     }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "Peer Reviewer",
+      "url": "",
+      "startDate": "2017",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Applied Sciences",
+        "Cogent Engineering",
+        "Computers and Industrial Engineering",
+        "International Journal of Environmental Research and Public Health",
+        "International Journal of Logistics",
+        "Journal of Advanced Transportation",
+        "Networks and Spatial Economics",
+        "Sustainability",
+        "Transportation Planning and Technology",
+        "Transportation Research Board Annual Meeting",
+        "Transportation Research Part A: Policy and Planning",
+        "Transportation Research Part E: Logistics and Transportation Review",
+        "Transportation Research Record",
+        "Trauma care",
+        "World Symposium on Transport and Land Use Research"
+      ]
+    }
   ]
 }
