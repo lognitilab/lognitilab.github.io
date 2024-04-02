@@ -12,7 +12,7 @@ profiles:
   - align: right
     image: anmolpahwa.jpg
     content: about_anmolpahwa.md
-    image_circular: false # crops the image to make it circular
+    image_circular: true # crops the image to make it circular
     more_info: >
       <p>Room BSB xxx</p>
       <p>Building Sciences Block, IIT Madras</p>
