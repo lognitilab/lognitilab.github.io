@@ -5,7 +5,7 @@ permalink: /projects/
 description: List of ongoing projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [MTech, PhD]
 horizontal: false
 ---
 
