@@ -10,6 +10,6 @@ nav_order: 2
 <!-- _pages/projects.md -->
 <div class="projects">
 
-{% bibliography %}
+{% bibliography --file projects %}
 
 </div>
