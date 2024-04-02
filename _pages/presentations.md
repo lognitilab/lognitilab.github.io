@@ -10,4 +10,6 @@ nav_order: 2
 <!-- _pages/presentations.md -->
 <div class="presentations">
 
+{% presentations %}
+
 </div>
