@@ -314,13 +314,18 @@
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "Hindi",
+      "fluency": "Native Proficiency",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Full Professional Proficiency",
+      "icon": ""
+    },
+    {
+      "language": "Tamil",
+      "fluency": "Elementary Proficiency",
       "icon": ""
     }
   ]
