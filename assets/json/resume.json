@@ -295,13 +295,25 @@
       "name": "Programming Language",
       "level": "",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["Julia", "Python", "R", "VBA", "JavaScript"]
+      "keywords": [
+        "Julia",
+        "Python",
+        "R",
+        "VBA",
+        "JavaScript"
+      ]
     },
     {
       "name": "Applications",
       "level": "",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["TransCAD", "Maptitude", "ArcGIS", "VS Code", "Git"]
+      "keywords": [
+        "TransCAD",
+        "Maptitude",
+        "ArcGIS",
+        "VS Code",
+        "Git"
+      ]
     }
   ],
   "languages": [
