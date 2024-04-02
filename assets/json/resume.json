@@ -283,47 +283,17 @@
       ]
     }
   ],
-  "skills": [
+  "interests": [
     {
-      "name": "Programming Language",
-      "level": "",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Transportation Engineering",
+      "icon": "fa-solid fa-tag",
       "keywords": [
-        "Julia",
-        "Python",
-        "R",
-        "VBA",
-        "JavaScript"
+        "Sustainable Transportation",
+        "Freight Transportation",
+        "City Logistics",
+        "Last-Mile",
+        "Operations Research"
       ]
-    },
-    {
-      "name": "Applications",
-      "level": "",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "TransCAD",
-        "Maptitude",
-        "ArcGIS",
-        "VS Code",
-        "Git"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Hindi",
-      "fluency": "Native Proficiency",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Full Professional Proficiency",
-      "icon": ""
-    },
-    {
-      "language": "Tamil",
-      "fluency": "Elementary Proficiency",
-      "icon": ""
     }
   ]
 }
