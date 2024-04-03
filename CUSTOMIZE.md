@@ -10,9 +10,10 @@ The project is structured as follows, focusing on the main components that you w
 .
 ├── 📂 assets/: contains the assets that are displayed in the website
 │   └── 📂 json/
-    │   └── 📄 resume.json: CV in JSON format (https://jsonresume.org/)
 ├── 📂 _bibliography/
-│   └── 📄 papers.bib: bibliography in BibTeX format
+│   └── 📄 presentations.bib: bibliography of presentations in BibTeX format
+│   └── 📄 projects.bib: bibliography of projects in BibTeX format
+│   └── 📄 publications.bib: bibliography of publications in BibTeX format
 ├── 📄 _config.yml: the configuration file of the template
 ├── 📂 _data/: contains some of the data used in the template
 │   ├── 📄 cv.yml: CV in YAML format, used when assets/json/resume.json is not found
@@ -24,7 +25,6 @@ The project is structured as follows, focusing on the main components that you w
 ├── 📂 _pages/: contains the pages of the website
 |   └── 📄 404.md: 404 page (page not found)
 ├── 📂 _posts/: contains the blog posts
-├── 📂 _projects/: contains the projects
 └── 📂 _sass/: contains the SASS files that define the style of the website
     ├── 📄 _base.scss: base style of the website
     ├── 📄 _cv.scss: style of the CV page
@@ -131,7 +131,3 @@ You can implement your own buttons by editing the [\_layouts/bib.liquid](_layout
 ## Changing theme color
 
 A variety of beautiful theme colors have been selected for you to choose from. The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the [\_sass/\_themes.scss](_sass/_themes.scss) file. Other color variables are listed there as well. The stock theme color options available can be found at [\_sass/\_variables.scss](_sass/_variables.scss). You can also add your own colors to this file assigning each a name for ease of use across the template.
-
-## Adding social media information
-
-You can add your social media links by adding the specified information at the `Social integration` section in the [\_config.yml](_config.yml) file. This information will appear at the bottom of the `About` page.
