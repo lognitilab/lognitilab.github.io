@@ -2,13 +2,13 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+subtitle: Empowering Sustianable and Resilient Logistics
 
 profile:
   align: 
   image: 
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: LogNiti
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
