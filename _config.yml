@@ -9,7 +9,6 @@ last_name: Pahwa
 email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic Profile
-footer_text: 
 keywords: Sustainable Transportation, Freight Transportation, City Logistics, Last-Mile, Operations Research # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
