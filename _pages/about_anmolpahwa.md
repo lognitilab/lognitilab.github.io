@@ -2,4 +2,4 @@ Anmol Pahwa is an Assistant Professor in Civil Engineering Department at Indian 
 
 <a href="/assets/pdf/cv-anmolpahwa.pdf"><i class="ai ai-cv-square ai-3x"></i></a>
 <a href="https://scholar.google.com/citations?user=YLY2ITYAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-3x"></i></a>
-<a href="https://www.linkedin.com/in/anmol-pahwa-914b1283/"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://www.linkedin.com/in/anmol-pahwa-914b1283"><i class="fa-brands fa-linkedin"></i></a>
