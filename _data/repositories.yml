@@ -1,11 +1,15 @@
 github_users:
   - anmol1104
 
-github_repos:
+github_data:
+
+github_tools:
   - anmol1104/TA.jl
   - anmol1104/TSP.jl
   - anmol1104/VRP.jl
   - anmol1104/LRP.jl
+
+github_projects:
   - anmol1104/Freight-EcoRouting
   - anmol1104/LastMile-Resilience
   - anmol1104/LastMile-Logistics
