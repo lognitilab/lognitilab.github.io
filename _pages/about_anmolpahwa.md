@@ -1,4 +1,4 @@
-### Anmol Pahwa
+#### Anmol Pahwa
 
 Anmol Pahwa is an Assistant Professor in Civil Engineering Department at Indian Institute of Technology - Madras, with a particular focus in Transportation Engineering. He holds a BTech in Civil Engineering from Indian Institute of Techology - Delhi, and a PhD in Civil and Environmental Engineering from University of California, Davis. Before joing IIT Madras, Anmol worked a postdoctoral scholar at Insititute of Transportation Studies, UC Davis. His research interests include sustainable transportation, freight transportation, city logistics, last-mile, and operations research. Anmol aspires to play the role of key academic stakeholder in transitioning India’s logistics sector towards a sustainable industry with economically viable, environment efficient, and socially equitable freight transportation capable of handling high-probability low-severity disruptions, and a resilient industry that is robust, redundant, resourceful, and rapid against low-probability high-severity disruptions.
 
