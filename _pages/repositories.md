@@ -37,8 +37,6 @@ nav_order: 5
 
 ## GitHub Repositories
 
----
-
 ##### Data
 
 {% if site.data.repositories.github_data %}
