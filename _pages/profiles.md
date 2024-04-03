@@ -21,7 +21,7 @@ profiles:
       <p>Chennai, Tamil Nadu 600036</p>
 ---
 
-## Former Members
+### Former Members
 
 | Left aligned | Center aligned | Right aligned |
 | :----------- | :------------: | ------------: |
