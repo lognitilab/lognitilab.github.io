@@ -35,7 +35,11 @@ nav_order: 5
 {% endif %}
 {% endif %}
 
-## Data Repositories
+## GitHub Repositories
+
+---
+
+##### Data
 
 {% if site.data.repositories.github_data %}
 
@@ -46,7 +50,9 @@ nav_order: 5
 </div>
 {% endif %}
 
-## Tool Repositories
+---
+
+##### Tools
 
 {% if site.data.repositories.github_tools %}
 
@@ -57,7 +63,9 @@ nav_order: 5
 </div>
 {% endif %}
 
-## Project Repositories
+---
+
+##### Projects
 
 {% if site.data.repositories.github_projects %}
 
