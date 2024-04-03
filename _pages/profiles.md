@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: People
-description: Members of the LogNiti lab.
+description: Members of the LogNiti Lab.
 nav: true
 nav_order: 6
 
@@ -20,3 +20,11 @@ profiles:
       <p>Building Sciences Block, IIT Madras</p>
       <p>Chennai, Tamil Nadu 600036</p>
 ---
+
+## Former Members
+
+| Left aligned | Center aligned | Right aligned |
+| :----------- | :------------: | ------------: |
+| Left 1       |    center 1    |       right 1 |
+| Left 2       |    center 2    |       right 2 |
+| Left 3       |    center 3    |       right 3 |
