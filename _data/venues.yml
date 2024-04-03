@@ -15,3 +15,21 @@
 
 "Thesis":
   color: "#b44682"
+
+"Postdoc":
+  color: "#2c5171"
+  
+"PhD":
+  color: "#6f2c71"
+
+"MTech":
+  color: "#714c2c"
+
+"BTech":
+  color: "#2f712c"
+
+"Lectern":
+  color: "#2c5171"
+
+"Poster":
+  color: "#714c2c"
