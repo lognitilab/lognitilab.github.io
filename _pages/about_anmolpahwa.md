@@ -1,1 +1,4 @@
 Anmol Pahwa is an Assistant Professor in Civil Engineering Department at Indian Institute of Technology - Madras, with a particular focus in Transportation Engineering. His research interests include sustainable transportation, freight transportation, city logistics, last-mile, and operations research. In addition, he is equally inquisitive about interdisciplinary subjects in transportation such as economics, health, and equity. Anmol’s most recent work revolves around assessing economic viability, environmental efficiency, and social equity of last-mile distribution strategies for an e-retailer offering expedited delivery service, catering to a dynamic and stochastic (uncertain) customer demand.
+
+<i class="ai ai-cv ai-3x"></i>
+<i class="ai ai-google-scholar ai-3x"></i>
