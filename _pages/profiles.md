@@ -19,9 +19,9 @@ profiles:
       <p>Room BSB xxx</p>
       <p>Building Sciences Block, IIT Madras</p>
       <p>Chennai, Tamil Nadu 600036</p>
-  - align: right
+  - align: 
     image: 
-    content: about_anmolpahwa.md
+    content: about_formermembers.md
     image_circular: false # crops the image to make it circular
     more_info: 
 ---
