@@ -15,4 +15,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-A logistics policy (LogNiti) <a href="/assets/audio/ləɡniːˈtɪ.wav">[ləɡniːˈtɪ]</a> lab for sustainable and resilience logistics.
+A logistics policy (LogNiti) <a href="/assets/audio/ləɡniːˈtɪ.wav" target="_blank" rel="noopener noreferrer">[ləɡniːˈtɪ]</a> lab for sustainable and resilience logistics.
