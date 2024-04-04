@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shinkansen: Shinkansen - Transforming Japan
+title: Shinkansen - Transforming Japan
 date: 2019-08-10 19:46:00
 description: Shinkansen – The pride of Japan and the symbol of Japanese post-war recovery. But how does the High Speed Rail impact local economy? A look into Kyushu Shinkansen.
 tags: 
