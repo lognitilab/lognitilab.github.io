@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: A logistics policy (LogNiti) [ləɡniːˈt̪ɪ] lab for sustainable and resilience logistics.
+subtitle:
 
 profile:
   align:
@@ -14,3 +14,5 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
+
+A logistics policy (LogNiti) <a href=https://itinerarium.github.io/phoneme-synthesis/?w=ləɡniːˈtɪ>[ləɡniːˈtɪ]</a> lab for sustainable and resilience logistics.
