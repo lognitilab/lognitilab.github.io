@@ -19,7 +19,7 @@ A retailer’s choice to purchase a fleet of electric vehicles (trucks or delive
 
 <div class="row mt-3" style="text-align: center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/15.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/15.jpg" class="img-fluid rounded z-depth-1" width="65%" height="auto" zoomable=true %}
     </div>
 </div>
 <p style="font-size:0.7em; text-align: center">Typical truck-use by vocation (Vehicle Miles Traveled)</p>
