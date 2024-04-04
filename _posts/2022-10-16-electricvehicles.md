@@ -22,7 +22,7 @@ A retailer’s choice to purchase a fleet of electric vehicles (trucks or delive
         {% include figure.liquid loading="eager" path="assets/img/15.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
     </div>
 </div>
-<span style="font-size:0.7em; text-align: center">Typical truck-use by vocation (Vehicle Miles Traveled)</span>
+<p style="font-size:0.7em; text-align: center">Typical truck-use by vocation (Vehicle Miles Traveled)</p>
 
 *Developing infrastructure to support last-mile electrification*
 
@@ -39,8 +39,8 @@ A retailer’s choice to deploy a fleet of electric trucks is contingent upon th
         {% include figure.liquid loading="eager" path="assets/img/16.jpg" class="img-fluid rounded z-depth-1" width="50%" height="auto" zoomable=true %}
     </div>
 </div>
-<span style="font-size:0.7em; text-align: center">D2D – diesel/electric: Door-to-Door delivery with diesel/electric trucks</span>
-<span style="font-size:0.7em; text-align: center">Impact of battery characteristics on last-mile delivery costs with electric trucks under short time-windows</span>
+<p style="font-size:0.7em; text-align: center">D2D – diesel/electric: Door-to-Door delivery with diesel/electric trucks</p>
+<p style="font-size:0.7em; text-align: center">Impact of battery characteristics on last-mile delivery costs with electric trucks under short time-windows</p>
 
 *Deploying and managing electric vehicles*
 
