@@ -40,6 +40,8 @@ First, I present here one-to-one direct comparison of externalities from in-stor
 }
 ```
 
+<br/>
+
 Having established a direct one-to-one comparison, I then estimated the impact of online shopping accounting for the consumer behavior through the shopping choice model. Note, the current omni-channel retail scenario implies that some people shop in-store while others shop online. The results showcase a 7% reduction in overall VMT due to online purchases. Consequently, the urban environment witnesses a significant reduction in emissions, barring of course the NOx emissions.
 
 ```echarts
@@ -62,6 +64,8 @@ Having established a direct one-to-one comparison, I then estimated the impact o
   ]
 }
 ```
+
+<br/>
 
 These results therefore pose the question, why push for cleaner freight movement? Well, because these results are founded on current consumer behavior and retailer practices. It is important to consider the potential impact on consumer behavior as e-commerce can induce demand and conseuqently vehicle travel. Further, consumer-focused retail practices with lucrative offers such as expedited shipping and free returns render frequent less-than-truckloads goods flow. Hence, while e-commerce has the potential to offer environmentally efficient means of goods distribution, changing consumer behavior and retailer practices puts sustianability of urban goods flow at risk.
 
