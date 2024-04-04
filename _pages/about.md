@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Empowering Sustianable and Resilient Logistics
+subtitle: A logistics policy (LogNiti) [ləɡniːˈt̪ɪ] lab for sustainable and resilience logistics.
 
 profile:
   align:
