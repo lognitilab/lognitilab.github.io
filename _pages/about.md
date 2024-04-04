@@ -8,7 +8,7 @@ profile:
   align: right
   image: logo.jpg
   image_circular: false # crops the image to make it circular
-  more_info:
+  more_info: >
       <p>LogNiti Lab</p>
       <p>+91 44 2257 xxxx</p>
       <p>xxx[at]iitm[dot]ac[dot]in</p>
