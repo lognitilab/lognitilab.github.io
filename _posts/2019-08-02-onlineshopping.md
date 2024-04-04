@@ -19,7 +19,6 @@ To answer the question posed above, I modeled the shopping choice – whether to
 
 First, I present here one-to-one direct comparison of externalities from in-store and online shopping in terms of equivalence of one with the other, i.e. how many online purchases produce the same amount of externalities as the in-store purchase. Turns out, around 8 online purchases produce as much vehicle travel as 1 in-store purchase, thus reducing the traffic. Consequently, if everyone was to only shop online, significant reduction in emissions can be produced, barring NOx emissions. Note, delivery trucks are heavy emitters of criteria pollutant emissions, especially NOx emissions.
 
-<br/>
 ```echarts
 {
   "title": {
@@ -44,7 +43,6 @@ First, I present here one-to-one direct comparison of externalities from in-stor
 <br/>
 Having established a direct one-to-one comparison, I then estimated the impact of online shopping accounting for the consumer behavior through the shopping choice model. Note, the current omni-channel retail scenario implies that some people shop in-store while others shop online. The results showcase a 7% reduction in overall VMT due to online purchases. Consequently, the urban environment witnesses a significant reduction in emissions, barring of course the NOx emissions.
 
-<br/>
 ```echarts
 {
   "title": {
