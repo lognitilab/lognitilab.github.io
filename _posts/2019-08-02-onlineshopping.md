@@ -3,7 +3,7 @@ layout: post
 title: Is online shopping environment friendly?
 date: 2019-08-02 16:03:00
 description: Should I visit a store or should I just check out Amazon? You might have asked yourself this question quite a few times by now. But have you ever considered the impacts of this decision on the environment Well, this article should help you make an informed decision next time.
-tags: 
+tags:
 categories: moving-goods
 chart:
   echarts: true

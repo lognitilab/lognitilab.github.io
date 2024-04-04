@@ -3,7 +3,7 @@ layout: post
 title: Understanding last-mile distribution resilience
 date: 2022-07-22 13:52:00
 description: How resilient is last-mile distribution? Coping with low-probability high-severity disruption.
-tags: 
+tags:
 categories: moving-goods
 ---
 

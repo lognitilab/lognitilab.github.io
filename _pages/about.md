@@ -5,8 +5,8 @@ permalink: /
 subtitle: Empowering Sustianable and Resilient Logistics
 
 profile:
-  align: 
-  image: 
+  align:
+  image:
   image_circular: false # crops the image to make it circular
   more_info: LogNiti
 
