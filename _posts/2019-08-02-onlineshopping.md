@@ -19,6 +19,7 @@ To answer the question posed above, I modeled the shopping choice – whether to
 
 First, I present here one-to-one direct comparison of externalities from in-store and online shopping in terms of equivalence of one with the other, i.e. how many online purchases produce the same amount of externalities as the in-store purchase. Turns out, around 8 online purchases produce as much vehicle travel as 1 in-store purchase, thus reducing the traffic. Consequently, if everyone was to only shop online, significant reduction in emissions can be produced, barring NOx emissions. Note, delivery trucks are heavy emitters of criteria pollutant emissions, especially NOx emissions.
 
+<br/>
 ```echarts
 {
   "title": {
@@ -41,9 +42,9 @@ First, I present here one-to-one direct comparison of externalities from in-stor
 ```
 
 <br/>
-
 Having established a direct one-to-one comparison, I then estimated the impact of online shopping accounting for the consumer behavior through the shopping choice model. Note, the current omni-channel retail scenario implies that some people shop in-store while others shop online. The results showcase a 7% reduction in overall VMT due to online purchases. Consequently, the urban environment witnesses a significant reduction in emissions, barring of course the NOx emissions.
 
+<br/>
 ```echarts
 {
   "title": {
@@ -66,7 +67,6 @@ Having established a direct one-to-one comparison, I then estimated the impact o
 ```
 
 <br/>
-
 These results therefore pose the question, why push for cleaner freight movement? Well, because these results are founded on current consumer behavior and retailer practices. It is important to consider the potential impact on consumer behavior as e-commerce can induce demand and conseuqently vehicle travel. Further, consumer-focused retail practices with lucrative offers such as expedited shipping and free returns render frequent less-than-truckloads goods flow. Hence, while e-commerce has the potential to offer environmentally efficient means of goods distribution, changing consumer behavior and retailer practices puts sustianability of urban goods flow at risk.
 
 To conclude, what can you do the next time you have to shop? The direct comparison of in-store and online shopping showcase benefits of online shopping. Hence, you could try to replace your trips to store with online shopping. Further, you could try to consolidate your needs into a single purchase, enabling the e-retailer to make fewer vehicle trips to your house. With this I hope you can make an informed decision the next time you shop.
