@@ -22,7 +22,7 @@ To begin with, as with many such green initiatives, we found a lack of incentive
 
 <div class="row mt-3" style="text-align: center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/13.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/14.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
     </div>
 </div>
 <p style="font-size:0.7em; text-align: center">Reduction in emissions in Southern California Association of Governments (SCAG) region from network-wide freight eco-routing</p>
