@@ -19,4 +19,4 @@ Transitioning India's logistics sector towards a
 - sustainable industry with economically viable, environment efficient, and socially equitable freight transportation capable of handling high-probability low-severity fluctuations
 - resilient industry that is robust, redundant, resourceful, and rapid against low-probability high-severity disruptions
 
-LogNiti lab invites students, research scholars, and industry professionals to work towards our common mission.
+LogNiti lab invites students, research scholars, and industry professionals to work towards our common mission. <a href="https://lognitilab.github.io/people/">Get in touch!</a>
