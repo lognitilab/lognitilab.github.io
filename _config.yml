@@ -3,12 +3,12 @@
 # -----------------------------------------------------------------------------
 
 title: LogNiti Lab # the website title (if blank, full name will be used instead)
-first_name: Anmol
+first_name: LogNiti
 middle_name:
-last_name: Pahwa
-email: you@example.com
+last_name: Lab
+email: lognitilab@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic Profile
+  Lab Profile
 keywords: Sustainable Transportation, Freight Transportation, City Logistics, Last-Mile, Operations Research # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: logo.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
