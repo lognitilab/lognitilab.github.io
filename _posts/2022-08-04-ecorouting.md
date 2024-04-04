@@ -13,7 +13,7 @@ In the past century, global climate change has become a pressing concern for the
 
 <div class="row mt-3" style="text-align: center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/13.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/13.jpg" class="img-fluid rounded z-depth-1" width="60%" height="auto" zoomable=true %}
     </div>
 </div>
 <p style="font-size:0.7em; text-align: center">Southern California Association of Governments (SCAG) region – network and census tracts</p>
