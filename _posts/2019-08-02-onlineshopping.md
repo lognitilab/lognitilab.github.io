@@ -32,7 +32,7 @@ First, I present here one-to-one direct comparison of externalities from in-stor
   "yAxis": {},
   "series": [
     {
-      "name": "ratio",
+      "name": "ratio in-store:online",
       "type": "bar",
       "data": [8.1, 7.8, 2.7, 1.8, 0.8]
     }
@@ -57,7 +57,7 @@ Having established a direct one-to-one comparison, I then estimated the impact o
     {
       "name": "% change",
       "type": "bar",
-      "data": [7.0%, 7.0%, 4.9%, 3.4%, -1.8%]
+      "data": [7.0, 7.0, 4.9, 3.4, -1.8]
     }
   ]
 }
