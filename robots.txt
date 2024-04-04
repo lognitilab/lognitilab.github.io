@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://anmol1104.github.io/sitemap.xml
+Sitemap: https://lognitilab.github.io/sitemap.xml
