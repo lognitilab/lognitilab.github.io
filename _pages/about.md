@@ -15,4 +15,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-A logistics policy (LogNiti) <a href=https://itinerarium.github.io/phoneme-synthesis/?w=ləɡniːˈtɪ>[ləɡniːˈtɪ]</a> lab for sustainable and resilience logistics.
+A logistics policy (LogNiti) <a href="https://itinerarium.github.io/phoneme-synthesis/?w=ləɡniːˈtɪ">[ləɡniːˈtɪ]</a> lab for sustainable and resilience logistics.
