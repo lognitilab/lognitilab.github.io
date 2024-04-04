@@ -9,7 +9,7 @@ chart:
   echarts: true
 ---
 
-Should I visit a store or should I just check out Amazon? You might have asked yourself this question quite a few times by now. But have you ever considered the impacts of this decision on the environment? Well, this article should help you make an informed decision next time.
+**Should I visit a store or should I just check out Amazon? You might have asked yourself this question quite a few times by now. But have you ever considered the impacts of this decision on the environment? Well, this article should help you make an informed decision next time.**
 
 August 11, 1994 marks the day when the first ever online transaction was made, and since then, the internet has continuously reshaped the way we shop. E-commerce, a term completely unknown to us a couple of decades ago, has gradually become a fundamental part of our daily lives.
 
