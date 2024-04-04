@@ -27,12 +27,9 @@ First, I present here one-to-one direct comparison of externalities from in-stor
   "responsive": true,
   "tooltip": {},
   "xAxis": {
-    "name": "externality"
     "data": ["VMT", "CO", "CO2", "PM", "NOx"]
   },
-  "yAxis": {
-    "name": "ratio in-store:online"
-  },
+  "yAxis": {},
   "series": [
     {
       "name": "ratio",
@@ -53,12 +50,9 @@ Having established a direct one-to-one comparison, I then estimated the impact o
   "responsive": true,
   "tooltip": {},
   "xAxis": {
-    "name": "externality"
     "data": ["VMT", "CO", "CO2", "PM", "NOx"]
   },
-  "yAxis": {
-    "name": "percent change"
-  },
+  "yAxis": {},
   "series": [
     {
       "name": "% change",
@@ -69,8 +63,6 @@ Having established a direct one-to-one comparison, I then estimated the impact o
 }
 ```
 
-These results therefore pose the question, why push for cleaner freight movement? Well, because these results are founded on current consumer behavior and retailer practices.
-
-It is important to consider the potential impact on consumer behavior as e-commerce can induce demand and conseuqently vehicle travel. Further, consumer-focused retail practices with lucrative offers such as expedited shipping and free returns render frequent less-than-truckloads goods flow. Hence, while e-commerce has the potential to offer environmentally efficient means of goods distribution, changing consumer behavior and retailer practices puts sustianability of urban goods flow at risk.
+These results therefore pose the question, why push for cleaner freight movement? Well, because these results are founded on current consumer behavior and retailer practices. It is important to consider the potential impact on consumer behavior as e-commerce can induce demand and conseuqently vehicle travel. Further, consumer-focused retail practices with lucrative offers such as expedited shipping and free returns render frequent less-than-truckloads goods flow. Hence, while e-commerce has the potential to offer environmentally efficient means of goods distribution, changing consumer behavior and retailer practices puts sustianability of urban goods flow at risk.
 
 To conclude, what can you do the next time you have to shop? The direct comparison of in-store and online shopping showcase benefits of online shopping. Hence, you could try to replace your trips to store with online shopping. Further, you could try to consolidate your needs into a single purchase, enabling the e-retailer to make fewer vehicle trips to your house. With this I hope you can make an informed decision the next time you shop.
