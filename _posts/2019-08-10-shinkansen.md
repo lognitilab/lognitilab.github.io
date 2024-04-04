@@ -13,7 +13,7 @@ On October 1st 1964, just two weeks before the Tokyo Olympics, the first ever Sh
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/3.jpg" class="img-fluid rounded z-depth-1"  width="50%" height="auto" zoomable=true %}
     </div>
 </div>
 
@@ -21,7 +21,7 @@ While it can be argued, as with the chicken and egg problem, whether the rail (a
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/4.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/4.jpg" class="img-fluid rounded z-depth-1" width="50%" height="auto" zoomable=true %}
     </div>
 </div>
 
@@ -29,7 +29,7 @@ To establish the economic impacts of Shinkansen, Hiramatsu studied Kyushu Shinka
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
     </div>
 </div>
 <span style="font-size:0.5em;">Percentage change in population, jobs and production value proportional to the intensity of the color. The darker the color the higher is the percentage change due to the Shinkansen line. Note, lines are only made for illustration purpose, they do not truly represent true path of the line.</span>
