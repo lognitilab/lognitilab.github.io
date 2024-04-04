@@ -19,7 +19,8 @@ social: false # includes social icons at the bottom of the page
 
 **Vision**
 
-Transitioning India's logistics sector towards a 
+Transitioning India's logistics sector towards a
+
 - sustainable industry with economically viable, environment efficient, and socially equitable freight transportation capable of handling high-probability low-severity disruptions
 - resilient industry that is robust, redundant, resourceful, and rapid against low-probability high-severity disruptions
 
