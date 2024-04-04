@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Uber vs. car, taxi, or transit?
+title: Towards last-mile delivery with electric vehicles
 date: 2022-10-16 17:32:00
 description: Is last-mile delivery with electric vehicles viable given the stochastic and dynamic nature of the delivery environments?
 tags: 
@@ -19,7 +19,7 @@ A retailer’s choice to purchase a fleet of electric vehicles (trucks or delive
 
 <div class="row mt-3" style="text-align: center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/15.jpg" class="img-fluid rounded z-depth-1" width="75%" height="auto" zoomable=true %}
     </div>
 </div>
 <span style="font-size:0.7em; text-align: center">Typical truck-use by vocation (Vehicle Miles Traveled)</span>
@@ -36,7 +36,7 @@ A retailer’s choice to deploy a fleet of electric trucks is contingent upon th
 
 <div class="row mt-3" style="text-align: center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/4.jpg" class="img-fluid rounded z-depth-1" width="50%" height="auto" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/16.jpg" class="img-fluid rounded z-depth-1" width="50%" height="auto" zoomable=true %}
     </div>
 </div>
 <span style="font-size:0.7em; text-align: center">D2D – diesel/electric: Door-to-Door delivery with diesel/electric trucks</span>
