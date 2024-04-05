@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: A logistics policy (LogNiti) <a href="/assets/audio/ləɡniːˈtɪ.wav" target="_blank" rel="noopener noreferrer">[ləɡniːˈtɪ]</a> lab for sustainable and resilient logistics.
+subtitle: A logistics policy (LogNiti) <a href="/assets/audio/ləɡniːˈtɪ.wav" target="_blank" rel="noopener noreferrer">[ləɡniːˈtɪ]</a> lab for sustainable and resilient logistics in India, at IIT Madras.
 
 profile:
   align: right
