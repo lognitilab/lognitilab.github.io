@@ -2,6 +2,7 @@ github_users:
   - anmolpahwa
 
 github_data:
+  - anmolpahwa/Vehicle-Specification
 
 github_tools:
   - anmolpahwa/TA.jl
