@@ -2,8 +2,9 @@ github_users:
   - anmolpahwa
 
 github_data:
-  - anmolpahwa/Indian-Time-Use-Survey
-  - anmolpahwa/Vehicle-Specification
+  - anmolpahwa/ITUS
+  - anmolpahwa/INDAQ
+  - anmolpahwa/INDVS
 
 github_tools:
   - anmolpahwa/TA.jl
