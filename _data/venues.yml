@@ -22,11 +22,14 @@
 "PhD":
   color: "#2c5171"
 
+"MS":
+color: "#4682B4"
+
 "MTech":
   color: "#714c2c"
 
 "BTech":
-  color: "#2f712c"
+  color: "#b47846"
 
 "Lectern":
   color: "#2c5171"
