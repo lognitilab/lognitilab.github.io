@@ -5,7 +5,7 @@ permalink: /teaching/
 description: List of courses.
 nav: true
 nav_order: 6
-horizontal: true
+horizontal: false
 ---
 
 <!-- pages/teaching.md -->
