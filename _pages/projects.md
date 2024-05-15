@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 <!-- _pages/projects.md -->
-<div class="projects">
+<div class="publications">
 
 {% bibliography --file projects %}
 
