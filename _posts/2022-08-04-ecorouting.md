@@ -5,6 +5,8 @@ date: 2022-08-04 17:32:00
 description: Freight transportation is fundamental to economic growth, nonetheless, the trucks that haul this freight are pollution intensive, emitting greenhouse gases that affect the health of our planet, and criteria pollutants that adversely affect human health, and are also one of the leading cause for urban congestion and accidents. Can eco-routing trucks reduce freight related externalities? In this blog, we explore the opportunities and challenges in freight eco-routing.
 tags:
 categories: moving-goods
+authors:
+  - name: Anmol Pahwa
 ---
 
 **Freight transportation is fundamental to economic growth, nonetheless, the trucks that haul this freight are pollution intensive, emitting greenhouse gases that affect the health of our planet, and criteria pollutants that adversely affect human health, and are also one of the leading cause for urban congestion and accidents. Can eco-routing trucks reduce freight related externalities? In this blog, we explore the opportunities and challenges in freight eco-routing.**

@@ -5,6 +5,8 @@ date: 2022-07-22 13:52:00
 description: How resilient is last-mile distribution? Coping with low-probability high-severity disruption.
 tags:
 categories: moving-goods
+authors:
+  - name: Anmol Pahwa
 ---
 
 **How resilient is last-mile distribution? Coping with low-probability high-severity disruption.**
