@@ -4,7 +4,7 @@ title: What is the environmental costs of expedited shipping?
 date: 2020-02-05 13:23:00
 description: Get it delivered in 3 days, by tomorrow!, today!! We have often given into this instant gratification, though for a premium, but what is the real cost of expedited deliveries?
 tags: moving-goods
-categories: Anmol Pahwa
+author: Anmol Pahwa
 ---
 
 **Get it delivered in 3 days, by tomorrow!, today!! We have often given into this instant gratification, though for a premium, but what is the real cost of expedited deliveries?**
