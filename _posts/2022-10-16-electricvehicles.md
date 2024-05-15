@@ -3,10 +3,8 @@ layout: post
 title: Towards last-mile delivery with electric vehicles
 date: 2022-10-16 17:32:00
 description: Is last-mile delivery with electric vehicles viable given the stochastic and dynamic nature of the delivery environments?
-tags:
-categories: moving-goods
-authors:
-  - name: Anmol Pahwa
+tags: moving-goods
+categories: Anmol Pahwa
 ---
 
 **Is last-mile delivery with electric vehicles viable given the stochastic and dynamic nature of the delivery environments?**
