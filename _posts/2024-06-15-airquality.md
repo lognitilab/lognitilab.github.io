@@ -8,7 +8,7 @@ author: Anmol Pahwa
 ---
 
 <div class="l-page">
-  <iframe src="{{ '../../../Research/Data/INDAQ/plots/index.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-  <iframe src="{{ '../../../Research/Data/INDAQ/plots/level.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-  <iframe src="{{ '../../../Research/Data/INDAQ/plots/pollutant.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
+  <iframe src="{{ '/assets/plotly/index.html' | relative_url }}"></iframe>
+  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}"></iframe>
+  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}"></iframe>
 </div>
