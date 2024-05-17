@@ -1,6 +1,8 @@
 **/*.min.css
 **/*.min.js
 assets/css/main.scss
-assets/plotly/demo.html
+assets/plotly/index.html
+assets/plotly/level.html
+assets/plotly/pollutant.html
 lighthouse_results/**
 _posts/2015-10-20-math.md
