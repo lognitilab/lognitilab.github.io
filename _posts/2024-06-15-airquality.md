@@ -8,7 +8,7 @@ author: Anmol Pahwa
 ---
 
 <div class="l-page">
-  <iframe src="{{ '/assets/plotly/index.html' | relative_url }}" scrolling='no' height="450" width="800"></iframe>
-  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" scrolling='no' height="600" width="450"></iframe>
-  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" scrolling='no' height="600" width="450"></iframe>
+  <iframe src="{{ '/assets/plotly/index.html' | relative_url }}" frameborder='0' scrolling='no' height="450" width="800"></iframe>
+  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder='0' scrolling='no' height="600" width="450"></iframe>
+  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" frameborder='0' scrolling='no' height="600" width="450"></iframe>
 </div>
