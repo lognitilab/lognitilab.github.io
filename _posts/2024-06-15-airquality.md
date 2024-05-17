@@ -8,7 +8,7 @@ author: Anmol Pahwa
 ---
 
 <div class="l-page">
-  <iframe src="{{ '/assets/plots/index.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-  <iframe src="{{ '/assets/plots/level.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-  <iframe src="{{ '/assets/plots/pollutant.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
+  <iframe src="https://github.com/anmolpahwa/INDAQ/raw/main/plots/index.html" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
+  <iframe src="https://github.com/anmolpahwa/INDAQ/raw/main/plots/level.html" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
+  <iframe src="https://github.com/anmolpahwa/INDAQ/raw/main/plots/pollutant.html" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
 </div>
