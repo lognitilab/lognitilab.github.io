@@ -273,7 +273,7 @@ jekyll-archives:
     year: "/blog/:year/"
     tag: "/blog/tag/:name/"
 
-display_tags: ["moving-goods", "moving-people"] # these tags will be displayed on the front page of your blog
+display_tags: ["moving-goods", "moving-people", "miscellaneous"] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
