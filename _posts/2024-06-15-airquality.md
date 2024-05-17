@@ -2,7 +2,7 @@
 layout: post
 title: Monitoring Daily Air Quality
 date: 2024-06-15 13:28:00
-description: Monitor daily air quality index, level, and prominent pollutant across different cities in India.
+description: Monitor daily air quality updates to index, level, and prominent pollutant across different cities in India.
 tags: miscellaneous
 author: Anmol Pahwa
 ---
