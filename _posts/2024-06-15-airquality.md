@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Towards last-mile delivery with electric vehicles
+title: Air Quality
 date: 2022-10-16 17:32:00
-description: Is last-mile delivery with electric vehicles viable given the stochastic and dynamic nature of the delivery environments?
-tags: moving-goods
+description: TO BE ADDED
+tags: miscellaneous
 author: Anmol Pahwa
 ---
 
