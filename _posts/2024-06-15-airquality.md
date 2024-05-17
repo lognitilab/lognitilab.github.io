@@ -1,17 +1,11 @@
 ---
 layout: post
-title: a distill-style blog post
-description: an example of a distill-style blog post and main elements
-tags: distill formatting
+title: Monitoring Daily Air Quality
+date: 2024-06-15 13:28:00
+description: Monitor daily air quality index, level, and prominent pollutant across different cities in India.
+tags: miscellaneous
+author: Anmol Pahwa
 ---
-
-## Interactive Plots
-
-You can add interative plots using plotly + iframes :framed_picture:
-
-<div class="l-page">
-  <iframe src="{{ '/assets/plotly/demo.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-</div>
 
 <div class="l-page">
   <iframe src="{{ '/assets/plotly/index.html' | relative_url }}" frameborder='0' scrolling='no' height="450" width="800"></iframe>
