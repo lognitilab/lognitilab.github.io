@@ -31,7 +31,7 @@ The Air Quality Index (AQI) is given by:
 
 \begin{equation}
 \label{eq:sqi}
-\text{AQI} = 1
+\text{AQI} = \max(\text{AQI}_{\text{PM2.5}}, \text{AQI}_{\text{PM10}}, \text{AQI}_{\text{NO}_2}, \text{AQI}_{\text{SO}_2}, \text{AQI}_{\text{CO}}, \text{AQI}_{\text{O}_3}, \text{AQI}_{\text{NH}_3})
 \end{equation}
 
 
