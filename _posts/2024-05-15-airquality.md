@@ -16,8 +16,7 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
     frameborder="0"
     scrolling="auto"
     height="455"
-    max-width="800"
-    width="100%"
+    width="800"
   ></iframe>
 </div>
 
@@ -52,7 +51,7 @@ where:
   ></iframe>
 </div>
 
-**Figure.** Air quality level pollutant across different cities in India
+**Figure.** Air quality level across different cities in India
 
 **Table.** Air quality index and level and associated pollutant concenrtation range
 
