@@ -16,7 +16,7 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
     frameborder="0"
     scrolling="no"
     height="455"
-    width="800"
+    width="100%"
   ></iframe>
 </div>
 
@@ -46,7 +46,7 @@ where:
     frameborder="0"
     scrolling="no"
     height="605"
-    width="450"
+    width="100%"
   ></iframe>
 </div>
 
@@ -82,7 +82,7 @@ where:
     frameborder="0"
     scrolling="no"
     height="605"
-    width="450"
+    width="100%"
   ></iframe>
 </div>
 
