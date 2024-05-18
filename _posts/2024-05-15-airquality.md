@@ -46,8 +46,8 @@ where:
 </style>
 
 <div class="iframe-container">
-  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="450"></iframe>
-  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="450"></iframe>
+  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="550"></iframe>
+  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="550"></iframe>
 </div>
 **Figure.** Air quality level and prominent pollutant across different cities in India
 
@@ -70,4 +70,4 @@ where:
     </tr>
   </thead>
 </table>
-CO in mg/m<sup>3</sup> and other pollutants in μg/m<sup>3<s/up>; 24-hourly average values for PM<sub>10</sub>, PM<sub>2.5</sub>, NO<sub>2</sub>,SO<sub>2</sub>, NH<sub>3</sub>, and Pb, and 8-hourly values for CO and O<sub>3</sub>.
+CO in mg/m<sup>3</sup> and other pollutants in μg/m<sup>3</sup>; 24-hourly average values for PM<sub>10</sub>, PM<sub>2.5</sub>, NO<sub>2</sub>,SO<sub>2</sub>, NH<sub>3</sub>, and Pb, and 8-hourly values for CO and O<sub>3</sub>.
