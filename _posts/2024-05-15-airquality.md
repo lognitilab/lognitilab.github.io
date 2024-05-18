@@ -17,6 +17,7 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
     scrolling="no"
     height="455"
     width="800"
+    style="border: 1px dashed grey;"
   ></iframe>
 </div>
 
