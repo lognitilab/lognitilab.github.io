@@ -42,10 +42,10 @@ where:
 
 <style>
   .iframe-container {
-    display: "flex";
-    justify-content: "space-around";
-    width: "100%";
-    overflow: "hidden";
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
   }
 </style>
 
