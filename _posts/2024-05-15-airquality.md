@@ -14,7 +14,7 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
   <iframe
     src="{{ '/assets/plotly/index.html' | relative_url }}"
     frameborder="0"
-    scrolling="no"
+    scrolling="auto"
     height="455"
     width="100%"
   ></iframe>
@@ -44,7 +44,7 @@ where:
   <iframe
     src="{{ '/assets/plotly/level.html' | relative_url }}"
     frameborder="0"
-    scrolling="no"
+    scrolling="auto"
     height="605"
     width="100%"
   ></iframe>
@@ -78,9 +78,9 @@ where:
 
 <div class="l-page">
   <iframe
-    src="{{ '/assets/plotly/level.html' | relative_url }}"
+    src="{{ '/assets/plotly/pollutant.html' | relative_url }}"
     frameborder="0"
-    scrolling="no"
+    scrolling="auto"
     height="605"
     width="100%"
   ></iframe>
