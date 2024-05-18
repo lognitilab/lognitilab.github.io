@@ -32,13 +32,9 @@ The Air Quality Index (AQI) is given by:
 
 \begin{equation}
 \label{eq:aqi}
-\text{AQI} = \max(\text{AQI}_{\text{PM2.5}}, \text{AQI}_{\text{PM10}}, \text{AQI}_{\text{NO}_2}, \text{AQI}_{\text{SO}_2}, \text{AQI}_{\text{CO}}, \text{AQI}_{\text{O}_3}, \text{AQI}_{\text{NH}_3})
+\text{AQI} = \max(1, 2)
 \end{equation}
 
-\begin{equation}
-\label{eq:aqip}
-\text{AQI}_p = \frac{(\text{I}_{\text{high}} - \text{I}_{\text{low}})}{(\text{C}_{\text{high}} - \text{C}_{\text{low}})} \times (\text{C}_p - \text{C}_{\text{low}}) + \text{I}_{\text{low}}
-\end{equation}
 
 <style>
   .iframe-container {
