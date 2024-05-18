@@ -55,14 +55,14 @@ where:
     frameborder="0"
     scrolling="no"
     height="605"
-    width="450"
+    width="650"
   ></iframe>
   <iframe
     src="{{ '/assets/plotly/pollutant.html' | relative_url }}"
     frameborder="0"
     scrolling="no"
     height="605"
-    width="450"
+    width="650"
   ></iframe>
 </div>
 
