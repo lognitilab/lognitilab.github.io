@@ -45,8 +45,8 @@ where:
     src="{{ '/assets/plotly/level.html' | relative_url }}"
     frameborder="0"
     scrolling="no"
-    height="455"
-    width="800"
+    height="605"
+    width="450"
   ></iframe>
 </div>
 
@@ -81,8 +81,8 @@ where:
     src="{{ '/assets/plotly/level.html' | relative_url }}"
     frameborder="0"
     scrolling="no"
-    height="455"
-    width="800"
+    height="605"
+    width="450"
   ></iframe>
 </div>
 
