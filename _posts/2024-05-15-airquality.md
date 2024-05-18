@@ -14,16 +14,23 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
   <iframe src="{{ '/assets/plotly/index.html' | relative_url }}" frameborder='0' scrolling='no' height="455" width="800"></iframe>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <p><iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder='0' scrolling='no' height="605" width="450"></iframe></p>
-    </div>
-    <div class="col">
-      <p><iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" frameborder='0' scrolling='no' height="605" width="450"></iframe></p>
-    </div>
-  </div>
+**Figure.** Air quality index across different cities in India
+
+<style>
+  .iframe-container {
+      display: flex;
+      justify-content: space-around; /* Adjust spacing as needed */
+  }
+</style>
+
+<div class="iframe-container">
+  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="450"></iframe>
+  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="450"></iframe>
 </div>
+**Figure.** Air quality level and prominent pollutant across different cities in India
+
+
+**Table.** Air quality index and level and associated pollutant concenrtation range
 
 <table id="table" data-toggle="table" data-url="{{ '/assets/json/airquality.json' | relative_url }}">
   <thead>
@@ -41,3 +48,4 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
     </tr>
   </thead>
 </table>
+CO in mg/m<sup>3</sup> and other pollutants in μg/m<sup>3<s/up>; 24-hourly average values for PM<sub>10</sub>, PM<sub>2.5</sub>, NO<sub>2</sub>,SO<sub>2</sub>, NH<sub>3</sub>, and Pb, and 8-hourly values for CO and O<sub>3</sub>.
