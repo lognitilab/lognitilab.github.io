@@ -17,7 +17,6 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
     scrolling="no"
     height="455"
     width="800"
-    style="border: 1px dashed grey;"
   ></iframe>
 </div>
 
@@ -32,9 +31,8 @@ The Air Quality Index (AQI) is given by:
 
 \begin{equation}
 \label{eq:aqi}
-\text{AQI} = \max(AQI_PM2.5, AQI_PM10)
+\text{AQI} = \max(\text{AQI}_ \text{PM2.5}, \text{AQI}_ \text{PM10})
 \end{equation}
-
 
 <style>
   .iframe-container {
