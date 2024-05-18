@@ -31,7 +31,7 @@ The Air Quality Index (AQI) is given by:
 
 \begin{equation}
 \label{eq:aqip}
-\text{AQI}_ p = \frac{(\text{I}_ \text{high} - \text{I}_ \text{low})}{(\text{C}_ \text{high} - \text{C}_ \text{low})} \times (\text{C}_ p - \text{C}_ \text{low}) + \text{I}_ \text{low}
+\text{AQI}_ \text{p} = \frac{(\text{I}_ \text{high} - \text{I}_ \text{low})}{(\text{C}_ \text{high} - \text{C}_ \text{low})} \times (\text{C}_ \text{p} - \text{C}_ \text{low}) + \text{I}_ \text{low}
 \end{equation}
 
 where:
