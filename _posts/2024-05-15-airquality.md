@@ -14,7 +14,7 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
   <iframe
     src="{{ '/assets/plotly/index.html' | relative_url }}"
     frameborder="0"
-    scrolling="auto"
+    scrolling="no"
     height="455"
     width="800"
   ></iframe>
