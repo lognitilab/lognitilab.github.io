@@ -32,7 +32,7 @@ The Air Quality Index (AQI) is given by:
 
 \begin{equation}
 \label{eq:aqi}
-\text{AQI} = \max(1, 2)
+\text{AQI} = \max(\text{AQI}_{\text{PM2.5}})
 \end{equation}
 
 
