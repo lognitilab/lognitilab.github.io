@@ -17,7 +17,7 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
   <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder='0' scrolling='no' height="605" width="450"></iframe>
 </div>
 
-<table id="table" data-toggle="table" data-url="{{ '/assets/json/aqi.json' | relative_url }}">
+<table id="table" data-toggle="table" data-url="{{ '/assets/json/airquality.json' | relative_url }}">
   <thead>
     <tr>
       <th data-field="AQI Category">AQI Category</th>
