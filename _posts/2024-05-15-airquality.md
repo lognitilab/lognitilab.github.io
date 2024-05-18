@@ -11,22 +11,22 @@ pretty_table: true
 Air Quality is a crucial tool to communicate the quality of air in a given area, indicating the level of pollution and its potential impact on public health. It is calculated based on the concentrations of eight prominent pollutants, namely, Particulate Matter (PM<sub>10</sub> and PM<sub>2.5</sub>), Nitrogen Dioxide (NO<sub>2</sub>), Sulfur Dioxide (SO<sub>2</sub>), Carbon Monoxide (CO), Ozone (O<sub>3</sub>), Ammonia (NH<sub>3</sub>), and Lead (Pb). The estimation procedure involves continuous monitoring of these pollutants using a network of air quality monitoring stations across the country. Each pollutant's concentration is measured and then converted into a normalized index value using standard formulas and breakpoint tables provided by the Central Pollution Control Board (CPCB). The highest index value among the pollutants determines the overall AQI for that location. This value is then categorized into six levels—ranging from 'Good' to 'Severe'—to convey the health implications effectively to the public, aiding in the adoption of necessary precautio nary measures and policy decisions aimed at improving air quality.
 
 <div class="l-page">
-  <iframe src="{{ '/assets/plotly/index.html' | relative_url }}" frameborder='0' scrolling='no' height="455" width="800"></iframe>
+  <iframe
+    src="{{ '/assets/plotly/index.html' | relative_url }}"
+    frameborder="0"
+    scrolling="no"
+    height="455"
+    width="800"
+  ></iframe>
 </div>
 
 **Figure.** Air quality index across different cities in India
 
-\documentclass{article}
-\usepackage{amsmath}
-
-\begin{document}
-
 The Air Quality Index (AQI) is given by:
-
-\[
+\begin{equation}
 \text{AQI} = \max(\text{AQI}_{\text{PM2.5}}, \text{AQI}_{\text{PM10}}, \text{AQI}_{\text{NO}_2}, \text{AQI}_{\text{SO}_2}, \text{AQI}_{\text{CO}}, \text{AQI}_{\text{O}_3}, \text{AQI}_{\text{NH}_3})
 \text{AQI}_p = \frac{(\text{I}_{\text{high}} - \text{I}_{\text{low}})}{(\text{C}_{\text{high}} - \text{C}_{\text{low}})} \times (\text{C}_p - \text{C}_{\text{low}}) + \text{I}_{\text{low}}
-\]
+\end{equation}
 
 where:
 \begin{itemize}
@@ -36,25 +36,41 @@ where:
     \item $\text{I}_{\text{high}}$ and $\text{I}_{\text{low}}$ are the AQI breakpoints corresponding to $\text{C}_{\text{high}}$ and $\text{C}_{\text{low}}$.
 \end{itemize}
 
-\end{document}
-
 <style>
   .iframe-container {
-      display: flex;
-      justify-content: space-around; /* Adjust spacing as needed */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
   }
 </style>
 
 <div class="iframe-container">
-  <iframe src="{{ '/assets/plotly/level.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="550"></iframe>
-  <iframe src="{{ '/assets/plotly/pollutant.html' | relative_url }}" frameborder="0" scrolling="no" height="605" width="550"></iframe>
+  <iframe
+    src="{{ '/assets/plotly/level.html' | relative_url }}"
+    frameborder="0"
+    scrolling="no"
+    height="605"
+    width="450"
+  ></iframe>
+  <iframe
+    src="{{ '/assets/plotly/pollutant.html' | relative_url }}"
+    frameborder="0"
+    scrolling="no"
+    height="605"
+    width="450"
+  ></iframe>
 </div>
-**Figure.** Air quality level and prominent pollutant across different cities in India
 
+**Figure.** Air quality level and prominent pollutant across different cities in India
 
 **Table.** Air quality index and level and associated pollutant concenrtation range
 
-<table id="table" data-toggle="table" data-url="{{ '/assets/json/airquality.json' | relative_url }}">
+<table
+  id="table"
+  data-toggle="table"
+  data-url="{{ '/assets/json/airquality.json' | relative_url }}"
+>
   <thead>
     <tr>
       <th data-field="AQI Category">AQI Category</th>
@@ -70,4 +86,4 @@ where:
     </tr>
   </thead>
 </table>
-CO in mg/m<sup>3</sup> and other pollutants in μg/m<sup>3</sup>; 24-hourly average values for PM<sub>10</sub>, PM<sub>2.5</sub>, NO<sub>2</sub>,SO<sub>2</sub>, NH<sub>3</sub>, and Pb, and 8-hourly values for CO and O<sub>3</sub>.
+<sup>CO in mg/m<sup>3</sup> and other pollutants in μg/m<sup>3</sup>; 24-hourly average values for PM<sub>10</sub>, PM<sub>2.5</sub>, NO<sub>2</sub>,SO<sub>2</sub>, NH<sub>3</sub>, and Pb, and 8-hourly values for CO and O<sub>3</sub>.</sup>
