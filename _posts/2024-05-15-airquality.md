@@ -25,20 +25,9 @@ Air Quality is a crucial tool to communicate the quality of air in a given area,
 The Air Quality Index (AQI) is given by:
 
 \begin{equation}
-\text{AQI} = \max(\text{AQI}_{\text{PM2.5}}, \text{AQI}_{\text{PM10}}, \text{AQI}_{\text{NO}_2}, \text{AQI}_{\text{SO}_2}, \text{AQI}_{\text{CO}}, \text{AQI}_{\text{O}_3}, \text{AQI}_{\text{NH}_3})
+\label{eq:cauchy-schwarz}
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 \end{equation}
-
-\begin{equation}
-\text{AQI}_p = \frac{(\text{I}_{\text{high}} - \text{I}_{\text{low}})}{(\text{C}_{\text{high}} - \text{C}_{\text{low}})} \times (\text{C}_p - \text{C}_{\text{low}}) + \text{I}_{\text{low}}
-\end{equation}
-
-where:
-\begin{itemize}
-    \item $\text{AQI}_p$ is the AQI for pollutant $p$.
-    \item $\text{C}_p$ is the concentration of pollutant $p$.
-    \item $\text{C}_{\text{high}}$ and $\text{C}_{\text{low}}$ are the concentration breakpoints that bracket $\text{C}_p$.
-    \item $\text{I}_{\text{high}}$ and $\text{I}_{\text{low}}$ are the AQI breakpoints corresponding to $\text{C}_{\text{high}}$ and $\text{C}_{\text{low}}$.
-\end{itemize}
 
 <style>
   .iframe-container {
