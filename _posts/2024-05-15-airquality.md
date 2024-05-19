@@ -63,6 +63,12 @@ where:
 | Poor          | 201-300 | 251-350 | 91-120 | 181-280| 169-208 | 10-17  | 381-800| 801-1200| 2.1-3.0 |
 | Very Poor     | 301-400 | 351-430 | 121-250| 281-400| 209-748 | 17-34  | 801-1600| 1200-1800| 3.1-3.5|
 | Severe        | 401-500 | 430+    | 250+   | 400+   | 748+    | 34+    | 1600+  | 1800+   | 3.5+    |
+
+| Left aligned | Center aligned | Right aligned |
+| :----------- | :------------: | ------------: |
+| Left 1       |    center 1    |       right 1 |
+| Left 2       |    center 2    |       right 2 |
+| Left 3       |    center 3    |       right 3 |
 <sup>CO in mg/m<sup>3</sup> and other pollutants in μg/m<sup>3</sup>; 24-hourly average values for PM<sub>10</sub>, PM<sub>2.5</sub>, NO<sub>2</sub>,SO<sub>2</sub>, NH<sub>3</sub>, and Pb, and 8-hourly values for CO and O<sub>3</sub>.</sup>
 
 <div class="l-page">
