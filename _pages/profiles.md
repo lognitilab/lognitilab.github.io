@@ -18,6 +18,6 @@ profiles:
       <p>anmpahwa[at]iitm[dot]ac[dot]in</p>
       <p>Room BSB 338</p>
       <p>Building Sciences Block, IIT Madras</p>
-      <p>Chennai, Tamil Nadu - 600036</p>
+      <p>Chennai, TN - 600036</p>
   - content: about_rg.md
 ---
