@@ -17,7 +17,8 @@ profiles:
       <p>+91 44 2257 4275</p>
       <p>anmpahwa[at]iitm[dot]ac[dot]in</p>
       <p>Room BSB 338</p>
-      <p>Building Sciences Block, IIT Madras</p>
-      <p>Chennai, TN - 600036</p>
+      <p>Building Sciences Block</p>
+      <p>IIT Madras, Chennai</p>
+      <p>Tamil Nadu - 600036</p>
   - content: about_rg.md
 ---
