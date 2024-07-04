@@ -15,7 +15,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>+91 44 2257 4275</p>
-      <p>anmpahwa[at]iitm[dot]ac[dot]in</p>
+      <p>anmpahwa[at]civil[dot]iitm[dot]ac[dot]in</p>
       <p>Room BSB 338</p>
       <p>Building Sciences Block</p>
       <p>IIT Madras, Chennai</p>
