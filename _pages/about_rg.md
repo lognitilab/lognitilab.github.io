@@ -4,6 +4,8 @@
 
 **PhD**
 
+- Blessy K (202x): Assessing sustainability of last-mile distribution strategies for e-commerce deliveries across different Indian Cities 
+
 **MS**
 
 **MTech**
