@@ -4,7 +4,7 @@
 
 **PhD**
 
-- Blessy K: Sustainable urban freight management: Analysing consumer behaviour and last-mile distribution strategies in the Indian retail sector
+- Blessy K: Sustainable urban freight management - Analysing consumer behaviour and last-mile distribution strategies in the Indian retail sector
 
 **MS**
 
