@@ -1,18 +1,18 @@
 github_users:
-  - anmolpahwa
+  - anmpahwa
 
 github_data:
-  - anmolpahwa/ITUS
-  - anmolpahwa/INDAQ
-  - anmolpahwa/INDVS
+  - anmpahwa/ITUS
+  - anmpahwa/INDAQ
+  - anmpahwa/INDVS
 
 github_tools:
-  - anmolpahwa/TA.jl
-  - anmolpahwa/TSP.jl
-  - anmolpahwa/VRP.jl
-  - anmolpahwa/LRP.jl
+  - anmpahwa/TA.jl
+  - anmpahwa/TSP.jl
+  - anmpahwa/VRP.jl
+  - anmpahwa/LRP.jl
 
 github_projects:
-  - anmolpahwa/Freight-EcoRouting
-  - anmolpahwa/LastMile-Resilience
-  - anmolpahwa/LastMile-Logistics
+  - anmpahwa/Freight-EcoRouting
+  - anmpahwa/LastMile-Resilience
+  - anmpahwa/LastMile-Logistics
