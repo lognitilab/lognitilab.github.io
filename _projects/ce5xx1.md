@@ -2,7 +2,7 @@
 layout: page
 title: CE5xx1
 description: Sustainable Transportation
-img: ce5xx1.jpg
+img:
 importance: 1
 ---
 
