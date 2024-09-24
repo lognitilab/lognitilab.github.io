@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CE5xx1
-description: Sustainable Transportation
+description: Sustainable and Resilient Transportation Systems
 img:
 importance: 1
 ---
