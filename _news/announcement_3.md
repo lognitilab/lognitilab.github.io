@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-07-23 09:00:00
+date: 2025-14-01 09:00:00
 inline: true
 related_posts: false
 ---
 
-New project - A distribution-agnostic continuous approximation framework for Vehicle Routing Problem
+New project - Developing battery-aware operations for autonomous and unmanned last-mile delivery systems

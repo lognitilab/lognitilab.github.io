@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-07-15 09:00:00
+date: 2025-12-01 09:00:00
 inline: true
 related_posts: false
 ---
 
-New project - Exploring Determinants of Consumer Shopping Behaviour in India
+New project - Eco-driving freight on Indian highways: Assessing opportunities and challenges towards reducing transportation-related externalities

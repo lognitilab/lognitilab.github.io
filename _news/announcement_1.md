@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-07-01 09:00:00
+date: 2025-16-01 09:00:00
 inline: true
 related_posts: false
 ---
 
-Official date of joining IIT Madras, Civil Engineering department
+New Course - Optimisation Techniques in Transportation Engineering
