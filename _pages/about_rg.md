@@ -14,6 +14,8 @@
 
 **BTech**
 
+Arvind Vidhyashankar: Simulating a day in the life of Indians: Unravelling the travel patterns
+
 ---
 
 #### Hall of Fame
