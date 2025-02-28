@@ -6,6 +6,8 @@
 
 - Blessy K: Sustainable urban freight management - Analysing consumer behaviour and last-mile distribution strategies in the Indian retail sector
 
+- Stepehen Babu: Eco-driving freight on Indian highways: Assessing opportunities and challenges towards reducing transportation-related externalities
+
 **MS**
 
 **MTech**
