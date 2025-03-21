@@ -10,11 +10,11 @@
 
 **MS**
 
-- Krishnapriya Mohanan: Construction Consolidation Centres for Urban Construction Logistics
-
 **MTech**
 
 - Varun A: Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai
+
+- Krishnapriya Mohanan: Construction Consolidation Centres for Urban Construction Logistics
 
 **BTech**
 
