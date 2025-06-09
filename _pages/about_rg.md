@@ -12,13 +12,13 @@
 
 **MTech**
 
-- Varun A: Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai
-
 - Krishnapriya Mohanan: Construction Consolidation Centres for Urban Construction Logistics
+
+- Aditya Aggarwal: Simulating a day in the life of Indians: Unravelling the travel patterns
 
 **BTech**
 
-- Arvind Vidhyashankar: Simulating a day in the life of Indians: Unravelling the travel patterns
+- Arvind Vidhyashankar: Simulating Daily Urban Mobility in India: A Markov Chain Approach using Time Use Survey Data
 
 ---
 
@@ -31,5 +31,7 @@
 **MS**
 
 **MTech**
+
+- Varun A (2025): Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai
 
 **BTech**
