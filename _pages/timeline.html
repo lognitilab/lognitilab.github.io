@@ -1,16 +1,40 @@
-<!-- _pages/timeline.html -->
-<div id="timeline" style="height: 400px; margin: 2rem 0;"></div>
+---
+layout: default
+title: Lab Timeline
+permalink: /timeline/
+---
 
-<script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" />
+<h2>LogNiti Lab Member Timeline</h2>
+<div id="gantt" style="height:800px;"></div>
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
-  const container = document.getElementById('timeline');
-  const items = new vis.DataSet([
-    { id: 1, content: 'Alice (PhD)', start: '2022-01-01', end: '2023-06-30' },
-    { id: 2, content: 'Bob (RA)', start: '2023-07-01', end: '2024-12-31' },
-    { id: 3, content: 'Charlie (Intern)', start: '2024-05-01', end: '2024-08-31' }
-  ]);
-  const options = { stack: false };
-  const timeline = new vis.Timeline(container, items, options);
+  const rawData = {{ site.data.students | jsonify }};
+  const data = rawData.map((member, index) => ({
+    type: 'bar',
+    orientation: 'h',
+    x: [new Date(member.end) - new Date(member.start)],
+    y: [member.name],
+    base: [member.start],
+    marker: {
+      color: member.status === "ongoing" ? '#FFA15A' : '#636EFA'
+    },
+    name: member.role
+  }));
+
+  const layout = {
+    title: 'Timeline of Lab Members',
+    barmode: 'stack',
+    showlegend: false,
+    xaxis: {
+      type: 'date',
+      title: 'Timeline',
+      tickformat: '%Y'
+    },
+    yaxis: {
+      automargin: true
+    }
+  };
+
+  Plotly.newPlot('gantt', data, layout);
 </script>
