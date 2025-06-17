@@ -1,0 +1,35 @@
+- name: Blessy K.
+  role: PhD
+  start: 2024-07
+  end: 2028-06
+  status: ongoing
+
+- name: Stephen Babu
+  role: PhD
+  start: 2025-01
+  end: 2028-12
+  status: ongoing
+
+- name: Varun A.
+  role: MTech
+  start: 2023-07
+  end: 2025-06
+  status: completed
+
+- name: Krishnapriya Mohanan
+  role: MTech
+  start: 2023-07
+  end: 2025-06
+  status: completed
+
+- name: Aditya Aggarwal
+  role: MTech
+  start: 2024-07
+  end: 2026-06
+  status: ongoing
+
+- name: Arvind Vidyashankar
+  role: BTech
+  start: 2022-07
+  end: 2026-06
+  status: ongoing
