@@ -1,8 +1,5 @@
 <!-- Roboto Font -->
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
 <!-- Timeline Styles -->
 <style>
@@ -21,6 +18,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+  }
+
+  .logo-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .timeline-header img {
@@ -87,6 +90,10 @@
     .timeline-header img {
       height: 60px;
     }
+
+    .logo-group {
+      gap: 0.5rem;
+    }
   }
 </style>
 
@@ -100,15 +107,10 @@
         Towards Sustainable and Resilient Freight
       </div>
     </div>
-    <img
-      src="/assets/img/circular_logo.png"
-      alt="LogNitiLab Logo"
-      style="margin-right: 2rem"
-    />
-    <img
-      src="/assets/img/iit_madras.svg"
-      alt="IITM Logo"
-    />
+    <div class="logo-group">
+      <img src="/assets/img/circular_logo.png" alt="LogNitiLab Logo" />
+      <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
+    </div>
   </div>
 
   <div id="gantt"></div>
@@ -118,8 +120,7 @@
       <span class="legend-color" style="background-color: #808080"></span> PI
     </div>
     <div class="legend-item">
-      <span class="legend-color" style="background-color: #6a8caf"></span>
-      PostDoc
+      <span class="legend-color" style="background-color: #6a8caf"></span> PostDoc
     </div>
     <div class="legend-item">
       <span class="legend-color" style="background-color: #a3b9cc"></span> PhD
@@ -232,7 +233,7 @@
       xaxis: {
         type: "date",
         tickformat: "%Y",
-        dtick: "M60",
+        dtick: "M60", // major ticks every 5 years
         side: "top",
         showgrid: true,
         gridcolor: "#e0e0e0",
@@ -240,12 +241,12 @@
       },
       xaxis2: {
         type: "date",
-        dtick: "M12",
+        dtick: "M12", // minor ticks every year
         showgrid: true,
         gridcolor: "#f0f0f0",
         gridwidth: 0.5,
         overlaying: "x",
-        showticklabels: false,
+        showticklabels: false
       },
       yaxis: {
         automargin: true,
