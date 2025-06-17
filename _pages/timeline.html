@@ -4,41 +4,54 @@ title: Lab Timeline
 permalink: /timeline/
 ---
 
-<h2>LogNiti Lab Member Timeline</h2>
+<h1 style="text-align:center; font-size: 2.5em; font-weight: bold;">LogNiti Lab</h1>
 <div id="gantt" style="height:800px;"></div>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <script>
-// Declare Liquid data as JSON string to avoid JS parsing errors in IDE
-let rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
+  const roleColors = {
+    "PI": "grey",
+    "Postdoc": "#2c5171",
+    "PhD": "#2c5171",
+    "MS": "#4682B4",
+    "MTech": "#714c2c",
+    "BTech": "#2f712c"
+  };
 
-const ganttData = rawGanttData.map(member => ({
-  type: 'bar',
-  orientation: 'h',
-  x: [new Date(member.end).getTime() - new Date(member.start).getTime()],
-  y: [member.name],
-  base: [member.start],
-  marker: {
-    color: member.status === "ongoing" ? '#FFA15A' : '#636EFA'
-  },
-  hovertemplate: `${member.name} (${member.role})<br><b>%{base}</b> to <b>${member.end}</b><extra></extra>`,
-  name: member.role
-}));
+  const rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
 
-const ganttLayout = {
-  title: 'Timeline of Lab Members',
-  barmode: 'stack',
-  showlegend: false,
-  xaxis: {
-    type: 'date',
-    title: 'Timeline',
-    tickformat: '%Y'
-  },
-  yaxis: {
-    automargin: true
-  }
-};
+  const ganttData = rawGanttData.map(member => {
+    const start = new Date(member.start + "-01");
+    const end = new Date(member.end + "-01");
+    return {
+      type: 'bar',
+      orientation: 'h',
+      x: [(end - start)],
+      y: [member.name],
+      base: member.start + "-01",
+      marker: {
+        color: roleColors[member.role] || '#888'
+      },
+      hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${end.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
+      name: member.role
+    };
+  });
 
-Plotly.newPlot('gantt', ganttData, ganttLayout);
+  const ganttLayout = {
+    title: '',
+    barmode: 'stack',
+    showlegend: false,
+    bargap: 0,
+    xaxis: {
+      type: 'date',
+      title: 'Timeline',
+      tickformat: '%Y'
+    },
+    yaxis: {
+      automargin: true
+    }
+  };
+
+  Plotly.newPlot('gantt', ganttData, ganttLayout);
 </script>
