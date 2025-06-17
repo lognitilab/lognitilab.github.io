@@ -53,9 +53,9 @@
 
 <div class="timeline-container">
   <div class="timeline-header">
-    <img src="/assets/images/iit_madras.svg" alt="IITM Logo" />
+    <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
     <div class="timeline-title">LogNiti Lab</div>
-    <img src="/assets/images/logo.jpg" alt="LogNitiLab Logo" />
+    <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
   </div>
   <div class="timeline-subtitle">est. 2024</div>
   <div id="gantt"></div>
@@ -65,7 +65,7 @@
 
 <script>
   const roleColors = {
-    "PI": "grey",
+    "PI": "#808080",
     "Postdoc": "#2c5171",
     "PhD": "#2c5171",
     "MS": "#4682B4",
@@ -133,7 +133,7 @@
 
     const data = pastBars.concat(futureBars);
 
-    const baseHeightPerPerson = 60;
+    const baseHeightPerPerson = 75;
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
