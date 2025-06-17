@@ -40,9 +40,16 @@
   status: completed
   project: "Construction Consolidation Centres for Urban Construction Logistics"
 
+- name: Harshvardhan Shivram Ket
+  role: MTech
+  start: 2025-06
+  end: 2026-06
+  status: ongoing
+  project: "modular Adaptive Large Neighbourhood Search for Vehicle Routing Problem"
+
 - name: Aditya Aggarwal
   role: MTech
-  start: 2025-07
+  start: 2025-06
   end: 2026-06
   status: ongoing
   project: "Simulating a day in the life of Indians: Unravelling the travel patterns"
