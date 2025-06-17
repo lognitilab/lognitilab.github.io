@@ -26,16 +26,15 @@
   }
 
   .timeline-title {
-    text-align: center;
-    flex: 1;
     font-size: 1.8rem;
     font-weight: bold;
     color: #333;
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* change from center to left-align */
     justify-content: center;
+    text-align: left; /* optional, reinforces alignment */
   }
 
   .underline {
@@ -51,6 +50,7 @@
     color: #666;
     margin-top: 0.2rem;
     margin-bottom: 0;
+    text-align: left;
   }
 
   .timeline-legend {
@@ -95,15 +95,15 @@
       <div class="underline"></div>
       <div class="timeline-subtitle">Towards Sustainable and Resilient Freight</div>
     </div>
-    <img src="/assets/img/circular_logo.png" alt="LogNitiLab Logo" style="margin-right: 2rem;" />
-    <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
+    <img src="/assets/img/circular_logo.png" alt="LogNitiLab Logo" style="margin-right: 3rem;" />
+    <img src="/assets/img/iit_madras.svg" alt="IITM Logo" style="margin-right: 3rem;" />
   </div>
 
   <div id="gantt"></div>
 
   <div class="timeline-legend">
     <div class="legend-item"><span class="legend-color" style="background-color: #808080;"></span> PI</div>
-    <div class="legend-item"><span class="legend-color" style="background-color: #6A8CAF;"></span> Postdoc</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #6A8CAF;"></span> PostDoc</div>
     <div class="legend-item"><span class="legend-color" style="background-color: #A3B9CC;"></span> PhD</div>
     <div class="legend-item"><span class="legend-color" style="background-color: #927A69;"></span> MS</div>
     <div class="legend-item"><span class="legend-color" style="background-color: #C2A28C;"></span> MTech</div>
@@ -229,6 +229,6 @@
       }]
     };
 
-    Plotly.newPlot("gantt", data, layout);
+    Plotly.newPlot("gantt", data, layout, { displayModeBar: false });
   }
 </script>
