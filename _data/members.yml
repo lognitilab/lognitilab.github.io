@@ -12,6 +12,20 @@
   status: ongoing
   project: "Sustainable urban freight management - Analysing consumer behaviour and last-mile distribution strategies in the Indian retail sector"
 
+- name: Varun A.
+  role: MTech
+  start: 2024-07
+  end: 2025-06
+  status: completed
+  project: "Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai"
+
+- name: Arvind Vidyashankar
+  role: BTech
+  start: 2024-07
+  end: 2026-06
+  status: ongoing
+  project: "Simulating Daily Urban Mobility in India: A Markov Chain Approach using Time Use Survey Data"
+
 - name: Stephen Babu
   role: PhD
   start: 2025-01
@@ -19,30 +33,16 @@
   status: ongoing
   project: "Eco-driving freight on Indian highways: Assessing opportunities and challenges towards reducing transportation-related externalities"
 
-- name: Varun A.
-  role: MTech
-  start: 2023-07
-  end: 2025-06
-  status: completed
-  project: "Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai"
-
 - name: Krishnapriya Mohanan
   role: MTech
-  start: 2023-07
+  start: 2025-01
   end: 2025-06
   status: completed
   project: "Construction Consolidation Centres for Urban Construction Logistics"
 
 - name: Aditya Aggarwal
   role: MTech
-  start: 2024-07
+  start: 2025-07
   end: 2026-06
   status: ongoing
   project: "Simulating a day in the life of Indians: Unravelling the travel patterns"
-
-- name: Arvind Vidyashankar
-  role: BTech
-  start: 2022-07
-  end: 2026-06
-  status: ongoing
-  project: "Simulating Daily Urban Mobility in India: A Markov Chain Approach using Time Use Survey Data"
