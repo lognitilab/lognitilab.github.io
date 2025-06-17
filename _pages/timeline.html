@@ -8,35 +8,37 @@ permalink: /timeline/
 <div id="gantt" style="height:800px;"></div>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 <script>
-  const rawData = {{ site.data.members | jsonify }};
+// Declare Liquid data as JSON string to avoid JS parsing errors in IDE
+let rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
 
-  const data = rawData.map(member => ({
-    type: 'bar',
-    orientation: 'h',
-    x: [new Date(member.end).getTime() - new Date(member.start).getTime()],
-    y: [member.name],
-    base: [member.start],
-    marker: {
-      color: member.status === "ongoing" ? '#FFA15A' : '#636EFA'
-    },
-    hovertemplate: `${member.name} (${member.role})<br><b>%{base}</b> to <b>${member.end}</b><extra></extra>`,
-    name: member.role
-  }));
+const ganttData = rawGanttData.map(member => ({
+  type: 'bar',
+  orientation: 'h',
+  x: [new Date(member.end).getTime() - new Date(member.start).getTime()],
+  y: [member.name],
+  base: [member.start],
+  marker: {
+    color: member.status === "ongoing" ? '#FFA15A' : '#636EFA'
+  },
+  hovertemplate: `${member.name} (${member.role})<br><b>%{base}</b> to <b>${member.end}</b><extra></extra>`,
+  name: member.role
+}));
 
-  const layout = {
-    title: 'Timeline of Lab Members',
-    barmode: 'stack',
-    showlegend: false,
-    xaxis: {
-      type: 'date',
-      title: 'Timeline',
-      tickformat: '%Y'
-    },
-    yaxis: {
-      automargin: true
-    }
-  };
+const ganttLayout = {
+  title: 'Timeline of Lab Members',
+  barmode: 'stack',
+  showlegend: false,
+  xaxis: {
+    type: 'date',
+    title: 'Timeline',
+    tickformat: '%Y'
+  },
+  yaxis: {
+    automargin: true
+  }
+};
 
-  Plotly.newPlot('gantt', data, layout);
+Plotly.newPlot('gantt', ganttData, ganttLayout);
 </script>
