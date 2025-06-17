@@ -2,7 +2,7 @@
   .timeline-container {
     max-width: 1000px;
     margin: 2rem auto;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     background-color: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -17,14 +17,14 @@
 
   @media (max-width: 768px) {
     #gantt {
-      overflow-x: scroll;
+      overflow-x: auto;
     }
   }
 </style>
 
 <div class="timeline-container">
   <h2>LogNiti Lab Member Timeline</h2>
-  <div id="gantt" style="height: 800px"></div>
+  <div id="gantt"></div>
 </div>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -99,11 +99,15 @@
 
     const data = pastBars.concat(futureBars);
 
+    const baseHeightPerPerson = 30;  // Adjust this for tighter or looser spacing
+    const chartHeight = rawGanttData.length * baseHeightPerPerson;
+
     const layout = {
       title: '',
       barmode: 'stack',
       showlegend: false,
       bargap: 0,
+      height: chartHeight,
       xaxis: {
         type: 'date',
         title: 'Timeline',
