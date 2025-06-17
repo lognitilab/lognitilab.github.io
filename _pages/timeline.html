@@ -201,7 +201,11 @@
           base: pastStart.toISOString(),
           orientation: "h",
           marker: { color: roleColor },
-          hoverinfo: "skip",
+          hovertemplate: `
+            <b>${member.name}</b><br>
+            Role: ${member.role}<br>
+            Start: ${start.toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}<br>
+            End: ${today.toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}<extra></extra>`,
           showlegend: false
         });
       }
