@@ -22,7 +22,7 @@
   }
 
   .timeline-header img {
-    height: 80px;
+    height: 100px;
     object-fit: contain;
   }
 
@@ -70,7 +70,7 @@
     "PI": "#808080",          // Neutral Gray
     "Postdoc": "#6A8CAF",     // Muted Slate Blue
     "PhD": "#A3B9CC",         // Soft Powder Blue (lighter complement to Postdoc)
-    "MS": "#B4C9C2",          // Gentle Sage Green
+    "MS": "#927A69",          // Gentle Sage Green
     "MTech": "#C2A28C",       // Muted Sandstone (warm but subdued)
     "BTech": "#9FBC9F"        // Soft Olive Green
   };
@@ -134,7 +134,7 @@
     });
 
     const data = pastBars.concat(futureBars);
-    const baseHeightPerPerson = 70;
+    const baseHeightPerPerson = 60;
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
@@ -155,14 +155,16 @@
         b: 20
       },
       xaxis: {
-        type: "date",
-        tickformat: "%Y",
+        type: 'date',
+        title: 'Timeline',
         showgrid: true,
-        gridcolor: "#eaeaea",
-        gridwidth: 1,
+        gridcolor: '#cccccc',
+        gridwidth: 1.2,
         tickfont: {
           size: 12
         },
+        dtick: 'M60',
+        tickformat: '%Y',
         side: "top"
       },
       yaxis: {
@@ -177,7 +179,7 @@
         x1: today,
         y0: -0.5,
         y1: rawGanttData.length - 0.5,
-        line: { color: "red", dash: "dash" }
+        line: { color: "red", width: 1 }
       }]
     };
 
