@@ -241,21 +241,17 @@
       xaxis: {
         type: "date",
         tickformat: "%Y",
-        dtick: "M60",
+        dtick: "M12",
         side: "top",
         showgrid: true,
         gridcolor: "#e0e0e0",
-        gridwidth: 1
-      },
-      xaxis2: {
-        type: "date",
-        dtick: "M12",
-        showgrid: true,
-        gridcolor: "#f0f0f0",
-        gridwidth: 0.5,
-        overlaying: "x",
-        matches: "x",
-        showticklabels: false
+        gridwidth: 1,
+        tickfont: {
+          size: 12,
+          color: "#999"
+        },
+        tickvals: Array.from({ length: 9 }, (_, i) => `${2025 + i * 5}-01-01`),
+        ticktext: Array.from({ length: 9 }, (_, i) => `${2025 + i * 5}`),
       },
       yaxis: {
         automargin: true,
