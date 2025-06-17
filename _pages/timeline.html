@@ -13,10 +13,12 @@
     "BTech": "#2f712c"
   };
 
-  try {
-    const rawGanttData = JSON.parse(`{{ site.data.members | jsonify}}`);
-    const today = new Date();
+  const rawGanttData = {{ site.data.members | jsonify }};
+  const today = new Date();
 
+  if (!Array.isArray(rawGanttData)) {
+    document.getElementById("gantt").innerText = "Error: Member data is invalid.";
+  } else {
     const pastBars = [];
     const futureBars = [];
 
@@ -50,7 +52,7 @@
           base: pastStart.toISOString(),
           orientation: 'h',
           marker: { color: roleColor },
-          hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${today.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
+          hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleDateString()}</b> to <b>${today.toLocaleDateString()}</b><extra></extra>`,
           showlegend: false
         });
       }
@@ -63,7 +65,7 @@
           base: futureStart.toISOString(),
           orientation: 'h',
           marker: { color: roleColor, opacity: 0.3 },
-          hovertemplate: `${member.name} (${member.role})<br><b>${today.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${end.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
+          hovertemplate: `${member.name} (${member.role})<br><b>${today.toLocaleDateString()}</b> to <b>${end.toLocaleDateString()}</b><extra></extra>`,
           showlegend: false
         });
       }
@@ -95,9 +97,5 @@
     };
 
     Plotly.newPlot('gantt', data, layout);
-  } catch (e) {
-    console.error("Failed to render timeline:", e);
   }
-</script>
-anttData, ganttLayout);
 </script>
