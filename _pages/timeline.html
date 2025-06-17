@@ -4,100 +4,41 @@ title: Lab Timeline
 permalink: /timeline/
 ---
 
-<h1 style="text-align:center; font-size: 2.5em; font-weight: bold;">LogNiti Lab</h1>
+<h2>LogNiti Lab Member Timeline</h2>
 <div id="gantt" style="height:800px;"></div>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <script>
-  const roleColors = {
-    "PI": "grey",
-    "Postdoc": "#2c5171",
-    "PhD": "#2c5171",
-    "MS": "#4682B4",
-    "MTech": "#714c2c",
-    "BTech": "#2f712c"
-  };
+// Declare Liquid data as JSON string to avoid JS parsing errors in IDE
+let rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
 
-  const rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
-  const today = new Date();
+const ganttData = rawGanttData.map(member => ({
+  type: 'bar',
+  orientation: 'h',
+  x: [new Date(member.end).getTime() - new Date(member.start).getTime()],
+  y: [member.name],
+  base: [member.start],
+  marker: {
+    color: member.status === "ongoing" ? '#FFA15A' : '#636EFA'
+  },
+  hovertemplate: `${member.name} (${member.role})<br><b>%{base}</b> to <b>${member.end}</b><extra></extra>`,
+  name: member.role
+}));
 
-  const pastBars = [];
-  const futureBars = [];
+const ganttLayout = {
+  title: 'Timeline of Lab Members',
+  barmode: 'stack',
+  showlegend: false,
+  xaxis: {
+    type: 'date',
+    title: 'Timeline',
+    tickformat: '%Y'
+  },
+  yaxis: {
+    automargin: true
+  }
+};
 
-  rawGanttData.forEach((member) => {
-    const start = new Date(member.start + "-01");
-    const end = new Date(member.end + "-01");
-    const roleColor = roleColors[member.role] || "#888";
-
-    let pastStart, pastDuration, futureStart, futureDuration;
-
-    if (today < start) {
-      pastDuration = 0;
-      futureDuration = (end - start);
-      futureStart = start;
-    } else if (today >= end) {
-      pastDuration = (end - start);
-      pastStart = start;
-      futureDuration = 0;
-    } else {
-      pastDuration = (today - start);
-      futureDuration = (end - today);
-      pastStart = start;
-      futureStart = today;
-    }
-
-    if (pastDuration > 0) {
-      pastBars.push({
-        type: 'bar',
-        x: [pastDuration],
-        y: [member.name],
-        base: pastStart.toISOString(),
-        orientation: 'h',
-        marker: { color: roleColor },
-        hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${today.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
-        showlegend: false
-      });
-    }
-
-    if (futureDuration > 0) {
-      futureBars.push({
-        type: 'bar',
-        x: [futureDuration],
-        y: [member.name],
-        base: futureStart.toISOString(),
-        orientation: 'h',
-        marker: { color: roleColor, opacity: 0.3 },
-        hovertemplate: `${member.name} (${member.role})<br><b>${today.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${end.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
-        showlegend: false
-      });
-    }
-  });
-
-  const data = pastBars.concat(futureBars);
-
-  const layout = {
-    title: '',
-    barmode: 'stack',
-    showlegend: false,
-    bargap: 0,
-    xaxis: {
-      type: 'date',
-      title: 'Timeline',
-      tickformat: '%Y'
-    },
-    yaxis: {
-      automargin: true
-    },
-    shapes: [{
-      type: 'line',
-      x0: today,
-      x1: today,
-      y0: -0.5,
-      y1: rawGanttData.length - 0.5,
-      line: { color: 'red', dash: 'dash' }
-    }]
-  };
-
-  Plotly.newPlot('gantt', data, layout);
+Plotly.newPlot('gantt', ganttData, ganttLayout);
 </script>
