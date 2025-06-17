@@ -128,19 +128,22 @@
       <span class="legend-color" style="background-color: #808080"></span> PI
     </div>
     <div class="legend-item">
-      <span class="legend-color" style="background-color: #6a8caf"></span> PostDoc
+      <span class="legend-color" style="background-color: #af6aaf"></span> PostDoc
     </div>
     <div class="legend-item">
-      <span class="legend-color" style="background-color: #a3b9cc"></span> PhD
+      <span class="legend-color" style="background-color: #6a8daf"></span> PhD
     </div>
     <div class="legend-item">
-      <span class="legend-color" style="background-color: #927a69"></span> MS
+      <span class="legend-color" style="background-color: #836950"></span> MS
     </div>
     <div class="legend-item">
-      <span class="legend-color" style="background-color: #c2a28c"></span> MTech
+      <span class="legend-color" style="background-color: #af8c6a"></span> MTech
     </div>
     <div class="legend-item">
-      <span class="legend-color" style="background-color: #9fbc9f"></span> BTech
+      <span class="legend-color" style="background-color: #508350"></span> BTech
+    </div>
+    <div class="legend-item">
+      <span class="legend-color" style="background-color: #6aaf6a"></span> Intern
     </div>
   </div>
 </div>
@@ -241,17 +244,11 @@
       xaxis: {
         type: "date",
         tickformat: "%Y",
-        dtick: "M12",
+        dtick: "M60",
         side: "top",
         showgrid: true,
         gridcolor: "#e0e0e0",
-        gridwidth: 1,
-        tickfont: {
-          size: 12,
-          color: "#999"
-        },
-        tickvals: Array.from({ length: 9 }, (_, i) => `${2025 + i * 5}-01-01`),
-        ticktext: Array.from({ length: 9 }, (_, i) => `${2025 + i * 5}`),
+        gridwidth: 1
       },
       yaxis: {
         automargin: true,
