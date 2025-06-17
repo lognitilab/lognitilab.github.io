@@ -99,31 +99,51 @@
 
     const data = pastBars.concat(futureBars);
 
-    const baseHeightPerPerson = 30;  // Adjust this for tighter or looser spacing
+    const baseHeightPerPerson = 300;  // Adjust this for tighter or looser spacing
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
-      title: '',
-      barmode: 'stack',
-      showlegend: false,
-      bargap: 0,
-      height: chartHeight,
-      xaxis: {
+    title: '',
+    barmode: 'stack',
+    showlegend: false,
+    bargap: 0,
+    height: chartHeight,
+    font: {
+        family: 'Roboto, sans-serif', // Match your site font
+        size: 13,
+        color: '#333'
+    },
+    margin: {
+        l: 150, // to accommodate long names
+        r: 20,
+        t: 20,
+        b: 40
+    },
+    xaxis: {
         type: 'date',
         title: 'Timeline',
-        tickformat: '%Y'
-      },
-      yaxis: {
-        automargin: true
-      },
-      shapes: [{
+        tickformat: '%Y',
+        showgrid: true,
+        gridcolor: '#eaeaea',
+        gridwidth: 1,
+        tickfont: {
+        size: 12
+        }
+    },
+    yaxis: {
+        automargin: true,
+        tickfont: {
+        size: 13
+        }
+    },
+    shapes: [{
         type: 'line',
         x0: today,
         x1: today,
         y0: -0.5,
         y1: rawGanttData.length - 0.5,
         line: { color: 'red', dash: 'dash' }
-      }]
+    }]
     };
 
     Plotly.newPlot('gantt', data, layout);
