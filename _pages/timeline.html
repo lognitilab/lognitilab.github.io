@@ -216,7 +216,7 @@
       title: "",
       barmode: "stack",
       showlegend: false,
-      bargap: 0,
+      bargap: 0.05,
       height: chartHeight,
       font: {
         family: "Roboto, sans-serif",
@@ -237,6 +237,15 @@
         showgrid: true,
         gridcolor: "#e0e0e0",
         gridwidth: 1
+      },
+      xaxis2: {
+        type: "date",
+        dtick: "M12",
+        showgrid: true,
+        gridcolor: "#f0f0f0",
+        gridwidth: 0.5,
+        overlaying: "x",
+        showticklabels: false,
       },
       yaxis: {
         automargin: true,
