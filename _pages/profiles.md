@@ -20,5 +20,5 @@ profiles:
       <p>Building Sciences Block</p>
       <p>IIT Madras, Chennai</p>
       <p>Tamil Nadu - 600036</p>
-  - content: timeline.html
+  - content: group.md
 ---
