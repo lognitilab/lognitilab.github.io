@@ -5,7 +5,7 @@
     padding: 1.5rem 2rem;
     background-color: #f9f9f9;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px #606060;
   }
 
   .timeline-container h2 {
@@ -97,7 +97,7 @@
 
     const data = pastBars.concat(futureBars);
 
-    const baseHeightPerPerson = 300;  // Adjust this for tighter or looser spacing
+    const baseHeightPerPerson = 100;  // Adjust this for tighter or looser spacing
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
@@ -107,12 +107,12 @@
     bargap: 0,
     height: chartHeight,
     font: {
-        family: 'Roboto, sans-serif', // Match your site font
+        family: 'Roboto, sans-serif',
         size: 13,
         color: '#333'
     },
     margin: {
-        l: 150, // to accommodate long names
+        l: 150,
         r: 20,
         t: 20,
         b: 40
