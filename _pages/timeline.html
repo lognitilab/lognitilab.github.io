@@ -1,177 +1,192 @@
 <link
-   href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-   rel="stylesheet"
-   />
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+
 <style>
-   .timeline-container {
-   max-width: 1000px;
-   margin: 2rem auto;
-   padding: 1.5rem 2rem;
-   background-color: #f9f9f9;
-   border-radius: 12px;
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-   font-family: "Roboto", sans-serif;
-   }
-   .timeline-header {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-bottom: 1rem;
-   }
-   .timeline-header img {
-   height: 50px;
-   }
-   .timeline-title {
-   text-align: center;
-   flex: 1;
-   font-size: 1.8rem;
-   font-weight: bold;
-   color: #333;
-   }
-   .timeline-subtitle {
-   text-align: center;
-   font-size: 1rem;
-   color: #666;
-   margin-bottom: 1rem;
-   }
-   @media (max-width: 768px) {
-   .timeline-header {
-   flex-direction: column;
-   gap: 0.5rem;
-   }
-   .timeline-header img {
-   height: 40px;
-   }
-   }
+  .timeline-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-family: "Roboto", sans-serif;
+  }
+
+  .timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-header img {
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .timeline-title {
+    text-align: center;
+    flex: 1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .timeline-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .timeline-header img {
+      height: 60px;
+    }
+  }
 </style>
+
 <div class="timeline-container">
-   <div class="timeline-header">
-      <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
-      <div class="timeline-title">LogNiti Lab</div>
-      <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
-   </div>
-   <div class="timeline-subtitle">est. 2024</div>
-   <div id="gantt"></div>
+  <div class="timeline-header">
+    <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
+    <div class="timeline-title">LogNiti Lab</div>
+    <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
+  </div>
+  <div class="timeline-subtitle">est. 2024</div>
+  <div id="gantt"></div>
 </div>
+
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 <script>
-   const roleColors = {
-     "PI": "#808080",
-     "Postdoc": "#2c5171",
-     "PhD": "#2c5171",
-     "MS": "#4682B4",
-     "MTech": "#714c2c",
-     "BTech": "#2f712c"
-   };
-   
-   const rawGanttData = {{ site.data.members | jsonify }};
-   const today = new Date();
-   
-   if (!Array.isArray(rawGanttData)) {
-     document.getElementById("gantt").innerText = "Error: Member data is invalid.";
-   } else {
-     const pastBars = [];
-     const futureBars = [];
-   
-     rawGanttData.forEach((member) => {
-       const start = new Date(member.start + "-01");
-       const end = new Date(member.end + "-01");
-       const roleColor = roleColors[member.role] || "#888";
-   
-       let pastStart, pastDuration, futureStart, futureDuration;
-   
-       if (today < start) {
-         pastDuration = 0;
-         futureDuration = (end - start);
-         futureStart = start;
-       } else if (today >= end) {
-         pastDuration = (end - start);
-         pastStart = start;
-         futureDuration = 0;
-       } else {
-         pastDuration = (today - start);
-         futureDuration = (end - today);
-         pastStart = start;
-         futureStart = today;
-       }
-   
-       if (pastDuration > 0) {
-         pastBars.push({
-           type: 'bar',
-           x: [pastDuration],
-           y: [member.name],
-           base: pastStart.toISOString(),
-           orientation: 'h',
-           marker: { color: roleColor },
-           hoverinfo: 'skip',
-           showlegend: false
-         });
-       }
-   
-       if (futureDuration > 0) {
-         futureBars.push({
-           type: 'bar',
-           x: [futureDuration],
-           y: [member.name],
-           base: futureStart.toISOString(),
-           orientation: 'h',
-           marker: { color: roleColor, opacity: 0.3 },
-           hoverinfo: 'skip',
-           showlegend: false
-         });
-       }
-     });
-   
-     const data = pastBars.concat(futureBars);
-   
-     const baseHeightPerPerson = 75;
-     const chartHeight = rawGanttData.length * baseHeightPerPerson;
-   
-     const layout = {
-       title: '',
-       barmode: 'stack',
-       showlegend: false,
-       bargap: 0,
-       height: chartHeight,
-       font: {
-         family: 'Roboto, sans-serif',
-         size: 13,
-         color: '#333'
-       },
-       margin: {
-         l: 150,
-         r: 20,
-         t: 40,
-         b: 40
-       },
-       xaxis: {
-         type: 'date',
-         title: 'Timeline',
-         tickformat: '%Y',
-         showgrid: true,
-         gridcolor: '#eaeaea',
-         gridwidth: 1,
-         tickfont: {
-           size: 12
-         }
-       },
-       yaxis: {
-         automargin: true,
-         tickfont: {
-           size: 13
-         },
-         side: 'top'
-       },
-       shapes: [{
-         type: 'line',
-         x0: today,
-         x1: today,
-         y0: -0.5,
-         y1: rawGanttData.length - 0.5,
-         line: { color: 'red', dash: 'dash' }
-       }]
-     };
-   
-     Plotly.newPlot('gantt', data, layout);
-   }
+  const roleColors = {
+    "PI": "#808080",
+    "Postdoc": "#2c5171",
+    "PhD": "#2c5171",
+    "MS": "#4682B4",
+    "MTech": "#714c2c",
+    "BTech": "#2f712c"
+  };
+
+  const rawGanttData = {{ site.data.members | jsonify }};
+  const today = new Date();
+
+  if (!Array.isArray(rawGanttData)) {
+    document.getElementById("gantt").innerText = "Error: Member data is invalid.";
+  } else {
+    const pastBars = [];
+    const futureBars = [];
+
+    rawGanttData.forEach((member) => {
+      const start = new Date(member.start + "-01");
+      const end = new Date(member.end + "-01");
+      const roleColor = roleColors[member.role] || "#888";
+
+      let pastStart, pastDuration, futureStart, futureDuration;
+
+      if (today < start) {
+        pastDuration = 0;
+        futureDuration = end - start;
+        futureStart = start;
+      } else if (today >= end) {
+        pastDuration = end - start;
+        pastStart = start;
+        futureDuration = 0;
+      } else {
+        pastDuration = today - start;
+        futureDuration = end - today;
+        pastStart = start;
+        futureStart = today;
+      }
+
+      if (pastDuration > 0) {
+        pastBars.push({
+          type: "bar",
+          x: [pastDuration],
+          y: [member.name],
+          base: pastStart.toISOString(),
+          orientation: "h",
+          marker: { color: roleColor },
+          hoverinfo: "skip",
+          text: [member.name],
+          textposition: "outside",
+          textfont: { size: 12, color: "#333" },
+          showlegend: false
+        });
+      }
+
+      if (futureDuration > 0) {
+        futureBars.push({
+          type: "bar",
+          x: [futureDuration],
+          y: [member.name],
+          base: futureStart.toISOString(),
+          orientation: "h",
+          marker: { color: roleColor, opacity: 0.3 },
+          hoverinfo: "skip",
+          showlegend: false
+        });
+      }
+    });
+
+    const data = pastBars.concat(futureBars);
+    const baseHeightPerPerson = 60;
+    const chartHeight = rawGanttData.length * baseHeightPerPerson;
+
+    const layout = {
+      title: "",
+      barmode: "stack",
+      showlegend: false,
+      bargap: 0,
+      height: chartHeight,
+      font: {
+        family: "Roboto, sans-serif",
+        size: 13,
+        color: "#333"
+      },
+      margin: {
+        l: 150,
+        r: 20,
+        t: 60,
+        b: 20
+      },
+      xaxis: {
+        type: "date",
+        title: "Timeline",
+        tickformat: "%Y",
+        showgrid: true,
+        gridcolor: "#eaeaea",
+        gridwidth: 1,
+        tickfont: {
+          size: 12
+        },
+        side: "top"
+      },
+      yaxis: {
+        automargin: true,
+        tickfont: {
+          size: 13
+        }
+      },
+      shapes: [
+        {
+          type: "line",
+          x0: today,
+          x1: today,
+          y0: -0.5,
+          y1: rawGanttData.length - 0.5,
+          line: { color: "red", dash: "dash" }
+        }
+      ]
+    };
+
+    Plotly.newPlot("gantt", data, layout);
+  }
 </script>
