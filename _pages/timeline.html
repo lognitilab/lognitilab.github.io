@@ -1,0 +1,38 @@
+<h2>LogNiti Lab Member Timeline</h2>
+<div id="gantt" style="height:800px;"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script>
+// Declare Liquid data as JSON string to avoid JS parsing errors in IDE
+let rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
+
+const ganttData = rawGanttData.map(member => ({
+  type: 'bar',
+  orientation: 'h',
+  x: [new Date(member.end).getTime() - new Date(member.start).getTime()],
+  y: [member.name],
+  base: [member.start],
+  marker: {
+    color: member.status === "ongoing" ? '#FFA15A' : '#636EFA'
+  },
+  hovertemplate: `${member.name} (${member.role})<br><b>%{base}</b> to <b>${member.end}</b><extra></extra>`,
+  name: member.role
+}));
+
+const ganttLayout = {
+  title: 'Timeline of Lab Members',
+  barmode: 'stack',
+  showlegend: false,
+  xaxis: {
+    type: 'date',
+    title: 'Timeline',
+    tickformat: '%Y'
+  },
+  yaxis: {
+    automargin: true
+  }
+};
+
+Plotly.newPlot('gantt', ganttData, ganttLayout);
+</script>
