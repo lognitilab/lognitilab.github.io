@@ -1,3 +1,9 @@
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+
 <style>
   .timeline-container {
     max-width: 1000px;
@@ -5,25 +11,54 @@
     padding: 1.5rem 2rem;
     background-color: #f9f9f9;
     border-radius: 12px;
-    box-shadow: 0 2px 8px #606060;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-family: "Roboto", sans-serif;
   }
 
-  .timeline-container h2 {
+  .timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-header img {
+    height: 50px;
+  }
+
+  .timeline-title {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    flex: 1;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #333;
   }
 
+  .timeline-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
   @media (max-width: 768px) {
-    #gantt {
-      overflow-x: auto;
+    .timeline-header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .timeline-header img {
+      height: 40px;
     }
   }
 </style>
 
 <div class="timeline-container">
-  <h2>LogNiti Lab Member Timeline</h2>
+  <div class="timeline-header">
+    <img src="/assets/images/iit_madras.svg" alt="IITM Logo" />
+    <div class="timeline-title">LogNiti Lab</div>
+    <img src="/assets/images/logo.jpg" alt="LogNitiLab Logo" />
+  </div>
+  <div class="timeline-subtitle">est. 2024</div>
   <div id="gantt"></div>
 </div>
 
@@ -78,6 +113,7 @@
           base: pastStart.toISOString(),
           orientation: 'h',
           marker: { color: roleColor },
+          hoverinfo: 'skip',
           showlegend: false
         });
       }
@@ -90,6 +126,7 @@
           base: futureStart.toISOString(),
           orientation: 'h',
           marker: { color: roleColor, opacity: 0.3 },
+          hoverinfo: 'skip',
           showlegend: false
         });
       }
@@ -97,27 +134,27 @@
 
     const data = pastBars.concat(futureBars);
 
-    const baseHeightPerPerson = 100;  // Adjust this for tighter or looser spacing
+    const baseHeightPerPerson = 30;
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
-    title: '',
-    barmode: 'stack',
-    showlegend: false,
-    bargap: 0,
-    height: chartHeight,
-    font: {
+      title: '',
+      barmode: 'stack',
+      showlegend: false,
+      bargap: 0,
+      height: chartHeight,
+      font: {
         family: 'Roboto, sans-serif',
         size: 13,
         color: '#333'
-    },
-    margin: {
+      },
+      margin: {
         l: 150,
         r: 20,
-        t: 20,
+        t: 40,
         b: 40
-    },
-    xaxis: {
+      },
+      xaxis: {
         type: 'date',
         title: 'Timeline',
         tickformat: '%Y',
@@ -125,23 +162,24 @@
         gridcolor: '#eaeaea',
         gridwidth: 1,
         tickfont: {
-        size: 12
+          size: 12
         }
-    },
-    yaxis: {
+      },
+      yaxis: {
         automargin: true,
         tickfont: {
-        size: 13
-        }
-    },
-    shapes: [{
+          size: 13
+        },
+        side: 'top'
+      },
+      shapes: [{
         type: 'line',
         x0: today,
         x1: today,
         y0: -0.5,
         y1: rawGanttData.length - 0.5,
         line: { color: 'red', dash: 'dash' }
-    }]
+      }]
     };
 
     Plotly.newPlot('gantt', data, layout);
