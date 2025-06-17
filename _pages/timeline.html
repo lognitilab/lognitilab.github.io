@@ -123,7 +123,7 @@
           base: pastStart.toISOString(),
           orientation: "h",
           marker: { color: roleColor },
-          hoverinfo: "skip",
+          hovertemplate: `<b>${member.name}</b> (${member.role})<br>Project: ${member.project}<extra></extra>`,
           showlegend: false
         });
       }
