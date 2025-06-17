@@ -53,14 +53,13 @@
   }
 </style>
 
-<div class="timeline-container">
-  <div class="timeline-header">
-    <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
-    <div class="timeline-title">LogNiti Lab</div>
-    <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
+<div class="timeline-header">
+  <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
+  <div class="timeline-title">
+    LogNiti Lab
+    <div class="timeline-subtitle">est. 2024</div>
   </div>
-  <div class="timeline-subtitle">est. 2024</div>
-  <div id="gantt"></div>
+  <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
 </div>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -134,7 +133,7 @@
     });
 
     const data = pastBars.concat(futureBars);
-    const baseHeightPerPerson = 60;
+    const baseHeightPerPerson = 50;
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
@@ -156,7 +155,6 @@
       },
       xaxis: {
         type: 'date',
-        title: 'Timeline',
         showgrid: true,
         gridcolor: '#cccccc',
         gridwidth: 1.2,
