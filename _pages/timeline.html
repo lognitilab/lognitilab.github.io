@@ -78,7 +78,7 @@
           base: pastStart.toISOString(),
           orientation: 'h',
           marker: { color: roleColor },
-          hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleDateString()}</b> to <b>${today.toLocaleDateString()}</b><extra></extra>`,
+          hovertemplate: 'skip',
           showlegend: false
         });
       }
@@ -91,7 +91,7 @@
           base: futureStart.toISOString(),
           orientation: 'h',
           marker: { color: roleColor, opacity: 0.3 },
-          hovertemplate: `${member.name} (${member.role})<br><b>${today.toLocaleDateString()}</b> to <b>${end.toLocaleDateString()}</b><extra></extra>`,
+          hovertemplate: 'skip',
           showlegend: false
         });
       }
