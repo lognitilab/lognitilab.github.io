@@ -1,0 +1,16 @@
+<!-- _pages/timeline.html -->
+<div id="timeline" style="height: 400px; margin: 2rem 0;"></div>
+
+<script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" />
+
+<script>
+  const container = document.getElementById('timeline');
+  const items = new vis.DataSet([
+    { id: 1, content: 'Alice (PhD)', start: '2022-01-01', end: '2023-06-30' },
+    { id: 2, content: 'Bob (RA)', start: '2023-07-01', end: '2024-12-31' },
+    { id: 3, content: 'Charlie (Intern)', start: '2024-05-01', end: '2024-08-31' }
+  ]);
+  const options = { stack: false };
+  const timeline = new vis.Timeline(container, items, options);
+</script>
