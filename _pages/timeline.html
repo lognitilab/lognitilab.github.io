@@ -20,25 +20,63 @@ permalink: /timeline/
   };
 
   const rawGanttData = JSON.parse(`{{ site.data.members | jsonify | escape }}`);
+  const today = new Date();
 
-  const ganttData = rawGanttData.map(member => {
+  const pastBars = [];
+  const futureBars = [];
+
+  rawGanttData.forEach((member) => {
     const start = new Date(member.start + "-01");
     const end = new Date(member.end + "-01");
-    return {
-      type: 'bar',
-      orientation: 'h',
-      x: [(end - start)],
-      y: [member.name],
-      base: member.start + "-01",
-      marker: {
-        color: roleColors[member.role] || '#888'
-      },
-      hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${end.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
-      name: member.role
-    };
+    const roleColor = roleColors[member.role] || "#888";
+
+    let pastStart, pastDuration, futureStart, futureDuration;
+
+    if (today < start) {
+      pastDuration = 0;
+      futureDuration = (end - start);
+      futureStart = start;
+    } else if (today >= end) {
+      pastDuration = (end - start);
+      pastStart = start;
+      futureDuration = 0;
+    } else {
+      pastDuration = (today - start);
+      futureDuration = (end - today);
+      pastStart = start;
+      futureStart = today;
+    }
+
+    if (pastDuration > 0) {
+      pastBars.push({
+        type: 'bar',
+        x: [pastDuration],
+        y: [member.name],
+        base: pastStart.toISOString(),
+        orientation: 'h',
+        marker: { color: roleColor },
+        hovertemplate: `${member.name} (${member.role})<br><b>${start.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${today.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
+        showlegend: false
+      });
+    }
+
+    if (futureDuration > 0) {
+      futureBars.push({
+        type: 'bar',
+        x: [futureDuration],
+        y: [member.name],
+        base: futureStart.toISOString(),
+        orientation: 'h',
+        marker: { color: roleColor, opacity: 0.3 },
+        hovertemplate: `${member.name} (${member.role})<br><b>${today.toLocaleString('default', { month: 'short', year: 'numeric' })}</b> to <b>${end.toLocaleString('default', { month: 'short', year: 'numeric' })}</b><extra></extra>`,
+        showlegend: false
+      });
+    }
   });
 
-  const ganttLayout = {
+  const data = pastBars.concat(futureBars);
+
+  const layout = {
     title: '',
     barmode: 'stack',
     showlegend: false,
@@ -50,8 +88,16 @@ permalink: /timeline/
     },
     yaxis: {
       automargin: true
-    }
+    },
+    shapes: [{
+      type: 'line',
+      x0: today,
+      x1: today,
+      y0: -0.5,
+      y1: rawGanttData.length - 0.5,
+      line: { color: 'red', dash: 'dash' }
+    }]
   };
 
-  Plotly.newPlot('gantt', ganttData, ganttLayout);
+  Plotly.newPlot('gantt', data, layout);
 </script>
