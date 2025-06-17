@@ -74,6 +74,7 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <!-- Timeline Chart Script -->
+<!-- prettier-ignore -->
 <script>
   const roleColors = {
     "PI": "#808080",
@@ -123,7 +124,7 @@
           base: pastStart.toISOString(),
           orientation: "h",
           marker: { color: roleColor },
-          hoverinfo: "skip",
+          hovertemplate: `<b>${member.name}</b> (${member.role})<br>Project: ${member.project}<extra></extra>`,
           showlegend: false
         });
       }
