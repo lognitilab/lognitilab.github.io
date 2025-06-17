@@ -67,12 +67,12 @@
 
 <script>
   const roleColors = {
-    "PI": "#808080",
-    "Postdoc": "#2c5171",
-    "PhD": "#2c5171",
-    "MS": "#4682B4",
-    "MTech": "#714c2c",
-    "BTech": "#2f712c"
+    "PI": "#808080",          // Neutral Gray
+    "Postdoc": "#6A8CAF",     // Muted Slate Blue
+    "PhD": "#A3B9CC",         // Soft Powder Blue (lighter complement to Postdoc)
+    "MS": "#B4C9C2",          // Gentle Sage Green
+    "MTech": "#C2A28C",       // Muted Sandstone (warm but subdued)
+    "BTech": "#9FBC9F"        // Soft Olive Green
   };
 
   const rawGanttData = {{ site.data.members | jsonify }};
@@ -115,9 +115,6 @@
           orientation: "h",
           marker: { color: roleColor },
           hoverinfo: "skip",
-          text: [member.name],
-          textposition: "outside",
-          textfont: { size: 12, color: "#333" },
           showlegend: false
         });
       }
@@ -137,7 +134,7 @@
     });
 
     const data = pastBars.concat(futureBars);
-    const baseHeightPerPerson = 60;
+    const baseHeightPerPerson = 70;
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
     const layout = {
@@ -154,12 +151,11 @@
       margin: {
         l: 150,
         r: 20,
-        t: 60,
+        t: 30,
         b: 20
       },
       xaxis: {
         type: "date",
-        title: "Timeline",
         tickformat: "%Y",
         showgrid: true,
         gridcolor: "#eaeaea",
@@ -175,16 +171,14 @@
           size: 13
         }
       },
-      shapes: [
-        {
-          type: "line",
-          x0: today,
-          x1: today,
-          y0: -0.5,
-          y1: rawGanttData.length - 0.5,
-          line: { color: "red", dash: "dash" }
-        }
-      ]
+      shapes: [{
+        type: "line",
+        x0: today,
+        x1: today,
+        y0: -0.5,
+        y1: rawGanttData.length - 0.5,
+        line: { color: "red", dash: "dash" }
+      }]
     };
 
     Plotly.newPlot("gantt", data, layout);
