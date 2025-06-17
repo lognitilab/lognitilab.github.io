@@ -202,17 +202,7 @@
           base: pastStart.toISOString(),
           orientation: "h",
           marker: { color: roleColor },
-          hoverinfo: "text",
-            text: `<b>${member.name}</b><br>Role: ${member.role}<br>Start: ${start.toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}<br><br>End: ${today.toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}`,
-            hoverlabel: {
-              bgcolor: "#eee",
-              bordercolor: "#ccc",
-              font: {
-                family: "Roboto, sans-serif",
-                size: 12,
-                color: "#333"
-              },
-            },
+          hoverinfo: "skip",
           showlegend: false
         });
       }
