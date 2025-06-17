@@ -124,7 +124,7 @@
           base: pastStart.toISOString(),
           orientation: "h",
           marker: { color: roleColor },
-          hovertemplate: `<b>${member.name}</b> (${member.role})<br>Project: ${member.project}<extra></extra>`,
+          hovertemplate: `${member.name} (${member.role})\nProject: ${member.project}<extra></extra>`,
           showlegend: false
         });
       }
@@ -178,16 +178,6 @@
         tickfont: {
           size: 13
         }
-      },
-      hoverlabel: {
-        align: "left",
-        font: {
-          family: "Roboto, sans-serif",
-          size: 12,
-          color: "#000"
-        },
-        bgcolor: "#fff",
-        bordercolor: "#ccc"
       },
       shapes: [{
         type: "line",
