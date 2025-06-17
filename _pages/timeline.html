@@ -160,7 +160,7 @@
     "MS": "#836950",
     "MTech": "#af8c6a",
     "BTech": "#508350",
-    "Intern": "6aaf6a"
+    "Intern": "#6aaf6a"
   };
 
   const rawGanttData = {{ site.data.members | jsonify }};
@@ -225,6 +225,25 @@
     const baseHeightPerPerson = 50;
     const chartHeight = rawGanttData.length * baseHeightPerPerson;
 
+    const minorGridShapes = [];
+    for (let year = 2025; year <= 2065; year++) {
+      if (year % 5 !== 0) {
+        minorGridShapes.push({
+          type: "line",
+          x0: `${year}-01-01`,
+          x1: `${year}-01-01`,
+          y0: -0.5,
+          y1: rawGanttData.length - 0.5,
+          line: {
+            color: "#eee",
+            width: 0.25,
+            dash: "dash"
+          },
+          layer: "below"
+        });
+      }
+    }
+
     const layout = {
       title: "",
       barmode: "stack",
@@ -239,20 +258,18 @@
       margin: {
         l: 150,
         r: 20,
-        t: 50,
+        t: 60,
         b: 20
       },
       xaxis: {
         type: "date",
         tickformat: "%Y",
-        dtick: "M12",
+        dtick: "M60",
         side: "top",
         showgrid: true,
-        gridcolor: "#eee",
-        gridwidth: 0.25,
-        tickfont: {
-          size: 8
-        }
+        gridcolor: "#ccc",
+        gridwidth: 0.5,
+        griddash: "solid"
       },
       yaxis: {
         automargin: true,
@@ -260,16 +277,20 @@
           size: 13
         }
       },
-      shapes: [{
-        type: "line",
-        x0: today,
-        x1: today,
-        y0: -0.5,
-        y1: rawGanttData.length - 0.5,
-        line: { color: "red", width: 1 }
-      }]
+      shapes: [
+        {
+          type: "line",
+          x0: today,
+          x1: today,
+          y0: -0.5,
+          y1: rawGanttData.length - 0.5,
+          line: { color: "red", width: 1 }
+        },
+        ...minorGridShapes
+      ]
     };
 
     Plotly.newPlot("gantt", data, layout, { displayModeBar: false });
   }
 </script>
+
