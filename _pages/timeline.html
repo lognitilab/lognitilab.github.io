@@ -53,6 +53,28 @@
     margin-bottom: 0;
   }
 
+  .timeline-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
   @media (max-width: 768px) {
     .timeline-header {
       flex-direction: column;
@@ -76,14 +98,23 @@
     <img src="/assets/img/circular_logo.png" alt="LogNitiLab Logo" />
     <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
   </div>
+
   <div id="gantt"></div>
+
+  <div class="timeline-legend">
+    <div class="legend-item"><span class="legend-color" style="background-color: #808080;"></span> PI</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #6A8CAF;"></span> Postdoc</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #A3B9CC;"></span> PhD</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #927A69;"></span> MS</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #C2A28C;"></span> MTech</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #9FBC9F;"></span> BTech</div>
+  </div>
 </div>
 
 <!-- Plotly -->
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <!-- Timeline Chart Script -->
-<!-- prettier-ignore -->
 <script>
   const roleColors = {
     "PI": "#808080",
@@ -133,7 +164,7 @@
           base: pastStart.toISOString(),
           orientation: "h",
           marker: { color: roleColor },
-          hovertemplate: `<b>${member.name}</b> (${member.role})<extra></extra>`,
+          hoverinfo: "skip",
           showlegend: false
         });
       }
