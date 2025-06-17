@@ -228,10 +228,11 @@
     const minorGridShapes = [];
     for (let year = 2025; year <= 2065; year++) {
       if (year % 5 !== 0) {
+        const dateStr = new Date(`${year}-01-01T00:00:00Z`).toISOString();
         minorGridShapes.push({
           type: "line",
-          x0: `${year}-01-01`,
-          x1: `${year}-01-01`,
+          x0: dateStr,
+          x1: dateStr,
           y0: -0.5,
           y1: rawGanttData.length - 0.5,
           line: {
