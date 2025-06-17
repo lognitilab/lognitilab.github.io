@@ -1,8 +1,7 @@
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-  rel="stylesheet"
-/>
+<!-- Roboto Font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
+<!-- Timeline Styles -->
 <style>
   .timeline-container {
     max-width: 1000px;
@@ -18,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .timeline-header img {
@@ -32,13 +31,18 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: #333;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .timeline-subtitle {
-    text-align: center;
     font-size: 1rem;
     color: #666;
-    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
   }
 
   @media (max-width: 768px) {
@@ -53,25 +57,31 @@
   }
 </style>
 
-<div class="timeline-header">
-  <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
-  <div class="timeline-title">
-    LogNiti Lab
-    <div class="timeline-subtitle">est. 2024</div>
+<!-- Chart Header + Container -->
+<div class="timeline-container">
+  <div class="timeline-header">
+    <img src="/assets/img/iit_madras.svg" alt="IITM Logo" />
+    <div class="timeline-title">
+      LogNiti Lab
+      <div class="timeline-subtitle">est. 2024</div>
+    </div>
+    <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
   </div>
-  <img src="/assets/img/logo.jpg" alt="LogNitiLab Logo" />
+  <div id="gantt"></div>
 </div>
 
+<!-- Plotly -->
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
+<!-- Timeline Chart Script -->
 <script>
   const roleColors = {
-    "PI": "#808080",          // Neutral Gray
-    "Postdoc": "#6A8CAF",     // Muted Slate Blue
-    "PhD": "#A3B9CC",         // Soft Powder Blue (lighter complement to Postdoc)
-    "MS": "#927A69",          // Gentle Sage Green
-    "MTech": "#C2A28C",       // Muted Sandstone (warm but subdued)
-    "BTech": "#9FBC9F"        // Soft Olive Green
+    "PI": "#808080",
+    "Postdoc": "#6A8CAF",
+    "PhD": "#A3B9CC",
+    "MS": "#927A69",
+    "MTech": "#C2A28C",
+    "BTech": "#9FBC9F"
   };
 
   const rawGanttData = {{ site.data.members | jsonify }};
@@ -83,7 +93,7 @@
     const pastBars = [];
     const futureBars = [];
 
-    rawGanttData.forEach((member) => {
+    rawGanttData.forEach(member => {
       const start = new Date(member.start + "-01");
       const end = new Date(member.end + "-01");
       const roleColor = roleColors[member.role] || "#888";
@@ -150,20 +160,17 @@
       margin: {
         l: 150,
         r: 20,
-        t: 30,
+        t: 20,
         b: 20
       },
       xaxis: {
-        type: 'date',
+        type: "date",
+        tickformat: "%Y",
+        dtick: "M60",
+        side: "top",
         showgrid: true,
-        gridcolor: '#cccccc',
-        gridwidth: 1.2,
-        tickfont: {
-          size: 12
-        },
-        dtick: 'M60',
-        tickformat: '%Y',
-        side: "top"
+        gridcolor: "#e0e0e0",
+        gridwidth: 1
       },
       yaxis: {
         automargin: true,
