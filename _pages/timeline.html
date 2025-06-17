@@ -32,9 +32,9 @@
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* change from center to left-align */
+    align-items: flex-start;
     justify-content: center;
-    text-align: left; /* optional, reinforces alignment */
+    text-align: left;
   }
 
   .underline {
@@ -115,7 +115,7 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <!-- Timeline Chart Script -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
 <script>
   const roleColors = {
     "PI": "#808080",
@@ -233,3 +233,5 @@
     Plotly.newPlot("gantt", data, layout, { displayModeBar: false });
   }
 </script>
+<!-- prettier-ignore-end -->
+ 
