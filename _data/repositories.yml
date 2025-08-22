@@ -1,5 +1,6 @@
 github_users:
   - anmpahwa
+  - HarshBerg
 
 github_data:
   - anmpahwa/ITUS
@@ -11,6 +12,7 @@ github_tools:
   - anmpahwa/TSP.jl
   - anmpahwa/VRP.jl
   - anmpahwa/LRP.jl
+  - HarshBerg/mALNS
 
 github_projects:
   - anmpahwa/Freight-EcoRouting
