@@ -3,7 +3,7 @@ layout: page
 title: CE5xx1
 description: Transportation Economics
 img:
-importance: 4
+importance: 5
 ---
 
 ### Objectives:
