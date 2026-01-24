@@ -30,6 +30,6 @@ importance: 5
 
 1. Schiller, P. L., & Kenworthy, J. (2018). An introduction to sustainable transportation: Policy, planning and implementation. (2nd edition). Routledge.
 
-### Lecures:
+### Lectures:
 
 *Work in Progress...*
