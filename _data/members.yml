@@ -67,3 +67,10 @@
   end: 2026-05
   status: completed
   project: "Exploring Anthropological, Meteorological, and Temporal Determinants of Air Quality"
+
+- name: Preetham Palle
+  role: BTech
+  start: 2025-10
+  end: 2026-05
+  status: completed
+  project: "Modelling energy consumption of Unmanned Aerival Vehicles (UAVs) for last-mile delivery"
