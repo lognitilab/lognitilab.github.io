@@ -14,14 +14,14 @@
 
 - name: Varun A.
   role: MTech
-  start: 2024-07
+  start: 2024-06
   end: 2025-06
   status: completed
   project: "Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai"
 
 - name: Arvind Vidyashankar
   role: BTech
-  start: 2024-07
+  start: 2024-10
   end: 2026-05
   status: ongoing
   project: "Simulating Daily Urban Mobility in India: A Markov Chain Approach using Time Use Survey Data"
@@ -42,7 +42,7 @@
 
 - name: Nagasai P.
   role: PhD
-  start: 2025-01
+  start: 2025-07
   end: 2029-09
   status: ongoing
   project: ""
@@ -63,7 +63,7 @@
 
 - name: Om Ramawtar Yadav
   role: BTech
-  start: 2025-07
+  start: 2025-06
   end: 2026-05
   status: completed
   project: "Exploring Anthropological, Meteorological, and Temporal Determinants of Air Quality"
