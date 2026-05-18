@@ -8,7 +8,7 @@
 - name: Blessy K.
   role: PhD
   start: 2024-07
-  end: 2028-06
+  end: 2028-09
   status: ongoing
   project: "Sustainable urban freight management - Analysing consumer behaviour and last-mile distribution strategies in the Indian retail sector"
 
@@ -22,41 +22,48 @@
 - name: Arvind Vidyashankar
   role: BTech
   start: 2024-07
-  end: 2026-06
+  end: 2026-05
   status: ongoing
   project: "Simulating Daily Urban Mobility in India: A Markov Chain Approach using Time Use Survey Data"
 
 - name: Stephen Babu
   role: PhD
   start: 2025-01
-  end: 2028-12
+  end: 2029-03
   status: ongoing
   project: "Eco-driving freight on Indian highways: Assessing opportunities and challenges towards reducing transportation-related externalities"
 
 - name: Krishnapriya Mohanan
   role: MTech
   start: 2025-01
-  end: 2025-06
+  end: 2025-05
   status: completed
   project: "Construction Consolidation Centres for Urban Construction Logistics"
+
+- name: Nagasai P.
+  role: PhD
+  start: 2025-01
+  end: 2029-09
+  status: ongoing
+  project: ""
 
 - name: Harshvardhan Ket
   role: MTech
   start: 2025-06
-  end: 2026-06
-  status: ongoing
-  project: "modular Adaptive Large Neighbourhood Search for Vehicle Routing Problem"
+  end: 2026-05
+  status: completed
+  project: "modular Adaptive Large Neighbourhood Search (mALNS) for Capacitated Vehicle Routing Problem (CVRP)"
 
 - name: Aditya Aggarwal
   role: MTech
   start: 2025-06
-  end: 2026-06
-  status: ongoing
+  end: 2026-05
+  status: completed
   project: "Simulating a day in the life of Indians: Unravelling the travel patterns"
 
 - name: Om Ramawtar Yadav
   role: BTech
   start: 2025-07
-  end: 2026-06
-  status: ongoing
+  end: 2026-05
+  status: completed
   project: "Exploring Anthropological, Meteorological, and Temporal Determinants of Air Quality"
