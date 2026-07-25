@@ -44,7 +44,7 @@ npx prettier . --check     # what CI runs (.github/workflows/prettier.yml)
 npx prettier . --write     # fix formatting
 ```
 
-Prettier config (`.prettierrc`): the Liquid plugin, `printWidth: 150`. Excluded paths are in `.prettierignore` (minified assets, generated plotly HTML, a couple of specific posts/pages).
+Prettier config (`.prettierrc`): the Liquid plugin, `printWidth: 150`. Excluded paths are in `.prettierignore` (minified assets, generated plotly HTML, `_pages/timeline.html`).
 
 There is no unit/integration test framework in this repo. CI quality gates are: Prettier formatting, a broken-link checker (lychee, `.github/workflows/broken-links*.yml`), and a manual/optional Axe accessibility check (`.github/workflows/axe.yml`).
 
@@ -60,7 +60,7 @@ Jekyll assembles pages from several content sources, not just `_pages/`:
 
 - **`_pages/*.md`** — top-level site pages, each with front matter selecting a `layout` (`page`, `about`, `distill`, `profiles`, `archive-*`, etc.) and its own permalink/nav settings.
 - **`_bibliography/*.bib`** — BibTeX files rendered via `jekyll-scholar`. There are three: `publications.bib`, `presentations.bib`, `projects.bib`. Each is rendered on its own page via `{% bibliography --file <name> %}` (see `_pages/publications.md`, `presentations.md`, `projects.md`) using the `bib` layout (`_layouts/bib.liquid`). BibTeX entries support custom fields (`pdf`, `slides`, `poster`, `abstract`, `code`, `website`, `arxiv`, `doi`, `abbr`, etc.) that render as buttons/badges — see `CUSTOMIZE.md` for the full field list.
-- **Jekyll collections** (`_news/`, `_projects/`, defined under `collections:` in `_config.yml`) — `_news` entries surface as announcements on the home page; `_projects` in this repo is repurposed to hold **course/teaching pages** (`ce2060.md`, `ce5540.md`, etc.), rendered by `_pages/teaching.md` iterating `site.projects` — this is *not* the research-projects list (that's `projects.bib` above). Don't confuse the two when adding content.
+- **Jekyll collections** (`_news/`, `_projects/`, defined under `collections:` in `_config.yml`) — `_news` entries surface as announcements on the home page; `_projects` in this repo is repurposed to hold **course/teaching pages** (`ce2060.md`, `ce5540.md`, etc.), rendered by `_pages/teaching.md` iterating `site.projects` — this is _not_ the research-projects list (that's `projects.bib` above). Don't confuse the two when adding content.
 - **`_posts/`** — blog posts (`YYYY-MM-DD-title.md`), rendered with the `post`/`distill` layout.
 - **`_data/*.yml`** — structured data: `members.yml` (lab members/people), `coauthors.yml`, `repositories.yml` (GitHub users/repos shown on `/repositories/`), `venues.yml` (publication venue abbreviation → link mapping used by the `abbr` bib field), and CV data (`cv.yml`, used as a fallback when `assets/json/resume.json` is absent).
 - **`_layouts/`** / **`_includes/`** — Liquid templates and reusable partials (`_includes/scripts/`, `_includes/repository/` for GitHub stats widgets, etc.).

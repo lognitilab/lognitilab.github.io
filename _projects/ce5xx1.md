@@ -32,4 +32,4 @@ importance: 5
 
 ### Lectures:
 
-*Work in Progress...*
+_Work in Progress..._
