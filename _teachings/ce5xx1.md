@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: course
 title: CE5xx1
-description: Transportation Economics
-img:
-importance: 5
+description: An introduction to transportation economics, covering consumer and firm behaviour, market failures, government intervention, and general equilibrium in the transportation sector.
+instructor: Dr. Anmol Pahwa
+year: TBD
+term: TBD
+location: TBD
+time: TBD
+course_id: ce5xx1
 ---
 
 ### Objectives:

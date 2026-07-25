@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+    {% if page.term or page.year or page.instructor or page.location or page.time %}
+      <p class="course-meta">
+        {% if page.term or page.year %}
+          <span class="course-term">
+            {{- page.term }}
+            {{ page.year -}}
+          </span>
+        {% endif %}
+        {% if page.instructor %}
+          <span class="course-instructor">{{ page.instructor }}</span>
+        {% endif %}
+        {% if page.location %}
+          <span class="course-location">{{ page.location }}</span>
+        {% endif %}
+        {% if page.time %}
+          <span class="course-time">{{ page.time }}</span>
+        {% endif %}
+      </p>
+    {% endif %}
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+</div>

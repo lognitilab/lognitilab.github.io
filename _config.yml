@@ -145,9 +145,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
+  teachings:
     output: true
-    permalink: /projects/:path/
+    permalink: /teachings/:path/
 
 announcements:
   enabled: true

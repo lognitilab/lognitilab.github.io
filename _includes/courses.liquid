@@ -1,0 +1,23 @@
+{% assign teachings_by_year = site.teachings | group_by: 'year' | sort: 'name' | reverse %}
+<div class="courses">
+  {% for year_group in teachings_by_year %}
+    <h2 class="year">{{ year_group.name }}</h2>
+    <div class="course-list">
+      {% assign courses = year_group.items | sort: 'title' %}
+      {% for course in courses %}
+        <div class="course-item">
+          <h3 class="course-title">
+            <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
+          </h3>
+          <div class="course-meta">
+            <span class="course-term">{{ course.term }}</span>
+            <span class="course-instructor">{{ course.instructor }}</span>
+          </div>
+          <div class="course-description">
+            <p>{{ course.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

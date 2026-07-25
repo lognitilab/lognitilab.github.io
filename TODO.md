@@ -1,7 +1,6 @@
 # TODO
 
-1. projects.bib: add abstracts
-2. repositories.yml: fix repositories
-3. blog.md: remove blog page
-4. teaching.md: update teaching content
-5. cv: update keywords in Q1/Q2 journals
+1. update main page
+2. update people page
+3. update teachings page
+4. cv: update keywords in Q1/Q2 journals
