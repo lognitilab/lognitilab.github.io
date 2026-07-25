@@ -10,9 +10,9 @@ github_data:
 github_tools:
   - anmpahwa/TA.jl
   - anmpahwa/TSP.jl
-  - anmpahwa/VRP.jl
+  - anmpahwa/eVRP.jl
   - anmpahwa/LRP.jl
-  - HarshBerg/mALNS
+  - HarshBerg/mALNS.jl
 
 github_projects:
   - anmpahwa/Freight-EcoRouting
