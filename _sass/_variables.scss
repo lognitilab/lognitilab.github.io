@@ -30,10 +30,17 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+// Brand colors (LogNiti Lab single fixed theme)
+$brand-maroon: #73211c;
+$brand-cream: #faf6ed;
+$brand-gold: #d0a950;
+$brand-teal: #1c6f73;
+$brand-brown: #4a3128;
+$brand-tan: #ede2c8;
+
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
-$code-bg-color-dark: #2c3237 !default;
+$code-bg-color: rgba($brand-teal, 0.06);
 
 // Font awesome location
 $fa-font-path: "../webfonts";

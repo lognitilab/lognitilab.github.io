@@ -5,14 +5,6 @@
     integrity="{{ site.echarts.integrity.library }}"
     crossorigin="anonymous"
   ></script>
-  {% if site.enable_darkmode %}
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/echarts@{{ site.echarts.version }}/theme/dark-fresh-cut.js"
-      integrity="{{ site.echarts.integrity.dark_theme }}"
-      crossorigin="anonymous"
-    ></script>
-  {% endif %}
   <script>
     let theme = determineComputedTheme();
 

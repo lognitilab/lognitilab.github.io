@@ -204,7 +204,6 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
   - [Installing](#installing)
   - [Customizing](#customizing)
   - [Features](#features)
-    - [Light/Dark Mode](#lightdark-mode)
     - [CV](#cv)
     - [People](#people)
     - [Publications](#publications)
@@ -240,17 +239,6 @@ For installation details please refer to [INSTALL.md](INSTALL.md).
 For customization details please refer to [CUSTOMIZE.md](CUSTOMIZE.md).
 
 ## Features
-
-### Light/Dark Mode
-
-This template has a built-in light/dark mode. It detects the user preferred color scheme and automatically switches to it. You can also manually switch between light and dark mode by clicking on the sun/moon icon in the top right corner of the page.
-
-<p align="center">
-<img src="readme_preview/light.png" width=400>
-<img src="readme_preview/dark.png" width=400>
-</p>
-
----
 
 ### CV
 
