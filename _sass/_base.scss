@@ -496,15 +496,20 @@ footer.sticky-bottom {
 
 // Repositories
 
+.repositories {
+  gap: 1rem;
+}
+
 .repo {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
   border-radius: 0.25rem;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .repo {
-    max-width: 50%;
+    max-width: calc(50% - 0.5rem);
   }
 }
 
@@ -692,6 +697,7 @@ footer.sticky-bottom {
 
   .course-item {
     background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
     border-radius: 0.25rem;
     padding: 1rem 1.25rem;
   }
