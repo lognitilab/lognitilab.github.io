@@ -258,8 +258,8 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--global-header-bg-color);
+  opacity: 1;
 }
 
 .navbar .dropdown-menu {
@@ -296,24 +296,24 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-header-text-color);
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-header-text-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-header-link-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    color: var(--global-header-link-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-header-link-color);
     }
   }
 
@@ -324,13 +324,13 @@ ul.task-list input[type="checkbox"] {
 
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-header-text-color);
         transition-property: all 0.2s ease-in-out;
       }
 
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-header-link-color);
         }
       }
     }
@@ -342,7 +342,7 @@ ul.task-list input[type="checkbox"] {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-color);
+    background-color: var(--global-header-text-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
