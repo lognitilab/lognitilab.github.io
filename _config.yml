@@ -22,8 +22,12 @@ impressum_path: # set to path to include impressum link in the footer, use the s
 # Theme
 # -----------------------------------------------------------------------------
 
-# repo color theme
-repo_theme: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+# repo color theme (hex overrides matching the site's brand palette — see
+# https://github.com/solafidei/github-stats-extended/blob/main/docs/advanced_documentation.md)
+repo_bg_color: ede2c8
+repo_title_color: 4a3128
+repo_text_color: 4a3128
+repo_icon_color: 1c6f73
 repo_trophies:
   enabled: false
   theme: flat # https://github.com/ryo-ma/github-profile-trophy

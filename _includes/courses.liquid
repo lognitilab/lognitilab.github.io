@@ -5,18 +5,18 @@
     <div class="course-list">
       {% assign courses = year_group.items | sort: 'title' %}
       {% for course in courses %}
-        <div class="course-item">
-          <h3 class="course-title">
-            <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
-          </h3>
-          <div class="course-meta">
-            <span class="course-term">{{ course.term }}</span>
-            <span class="course-instructor">{{ course.instructor }}</span>
+        <a href="{{ course.url | relative_url }}">
+          <div class="course-item hoverable">
+            <h3 class="course-title">{{ course.title }}</h3>
+            <div class="course-meta">
+              <span class="course-term">{{ course.term }}</span>
+              <span class="course-instructor">{{ course.instructor }}</span>
+            </div>
+            <div class="course-description">
+              <p>{{ course.description }}</p>
+            </div>
           </div>
-          <div class="course-description">
-            <p>{{ course.description }}</p>
-          </div>
-        </div>
+        </a>
       {% endfor %}
     </div>
   {% endfor %}
