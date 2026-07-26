@@ -13,7 +13,6 @@ github_tools:
   - anmpahwa/eVRP.jl
   - anmpahwa/LRP.jl
   - HarshBerg/mALNS.jl
-  - voxirad/freight-dashboard
 
 github_projects:
   - anmpahwa/Freight-EcoRouting
