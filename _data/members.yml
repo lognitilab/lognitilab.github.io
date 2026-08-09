@@ -40,13 +40,6 @@
   status: completed
   project: "Construction Consolidation Centres for Urban Construction Logistics"
 
-- name: Nagasai P.
-  role: PhD
-  start: 2025-07
-  end: 2029-09
-  status: ongoing
-  project: "Optimizing Strategic, Tactical, and Operational Aspects of Feeder Bus Systems"
-
 - name: Harshvardhan Ket
   role: MTech
   start: 2025-06
@@ -61,6 +54,13 @@
   status: completed
   project: "Simulating a day in the life of Indians: A Discrete-Choice Approach using Time Use Survey Data"
 
+- name: Nagasai P.
+  role: PhD
+  start: 2025-07
+  end: 2029-09
+  status: ongoing
+  project: "Optimizing Strategic, Tactical, and Operational Aspects of Feeder Bus Systems"
+
 - name: Om Ramawtar Yadav
   role: BTech
   start: 2025-06
@@ -74,6 +74,13 @@
   end: 2026-05
   status: completed
   project: "Modelling Energy Consumption of Unmanned Aerial Vehicles (UAVs) for Last-Mile Delivery"
+  
+- name: Praveen
+  role: Intern
+  start: 2026-06
+  end: 2026-07
+  status: completed
+  project: "Assessing Sustainability of Last-Mile Distribution Strategies for E-commerce Deliveries in Bengaluru"
 
 - name: Hana Aboobacker
   role: PhD
