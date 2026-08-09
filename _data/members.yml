@@ -10,14 +10,14 @@
   start: 2024-07
   end: 2028-09
   status: ongoing
-  project: "Sustainable urban freight management - Analysing consumer behaviour and last-mile distribution strategies in the Indian retail sector"
+  project: "Assessing Sustainability of Last Mile Distribution Strategies for E-commerce Deliveries Across Different Indian Cities"
 
 - name: Varun A.
   role: MTech
   start: 2024-06
   end: 2025-06
   status: completed
-  project: "Assessing sustainability of last-mile distribution strategies for e-commerce deliveries in Chennai"
+  project: "Assessing Sustainability of Last-Mile Distribution Strategies for E-commerce Deliveries in Chennai"
 
 - name: Arvind Vidyashankar
   role: BTech
@@ -31,7 +31,7 @@
   start: 2025-01
   end: 2029-03
   status: ongoing
-  project: "Eco-driving freight on Indian highways: Assessing opportunities and challenges towards reducing transportation-related externalities"
+  project: "Eco-driving Freight on Indian Highways: Assessing Opportunities and Challenges towards Reducing Transportation-related Externalities"
 
 - name: Krishnapriya Mohanan
   role: MTech
@@ -45,7 +45,7 @@
   start: 2025-07
   end: 2029-09
   status: ongoing
-  project: ""
+  project: "Optimizing Strategic, Tactical, and Operational Aspects of Feeder Bus Systems"
 
 - name: Harshvardhan Ket
   role: MTech
@@ -59,7 +59,7 @@
   start: 2025-06
   end: 2026-05
   status: completed
-  project: "Simulating a day in the life of Indians: Unravelling the travel patterns"
+  project: "Simulating a day in the life of Indians: A Discrete-Choice Approach using Time Use Survey Data"
 
 - name: Om Ramawtar Yadav
   role: BTech
@@ -73,4 +73,18 @@
   start: 2025-10
   end: 2026-05
   status: completed
-  project: "Modelling energy consumption of Unmanned Aerival Vehicles (UAVs) for last-mile delivery"
+  project: "Modelling Energy Consumption of Unmanned Aerial Vehicles (UAVs) for Last-Mile Delivery"
+
+- name: Hana Aboobacker
+  role: PhD
+  start: 2026-07
+  end: 2030-09
+  status: ongoing
+  project: "Assessing Wider Economic Benefits of Transportation Infrastructure Investments (WEB of TransIT)"
+
+- name: Kaviyapriya K N
+  role: MTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Assessing Wider Economic Benefits of Transportation Infrastructure Investments (WEB of TransIT)"
