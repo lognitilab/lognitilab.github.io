@@ -14,9 +14,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-The research at LogNiti lab centers on Freight Transportation — spanning Last-Mile Distribution and Long-Haul Logistics — drawing on Operations Research and Transportation Economics as its primary analytical frameworks to transition India's logistics sector towards a:
-
-- sustainable industry with economically viable, environmentally efficient, and socially equitable freight transportation capable of handling high-probability low-severity fluctuations
-- resilient industry with robust, redundant, resourceful, and rapid logisitc operations against low-probability high-severity disruptions
+Research at LogNiti Lab is grounded in Transportation Economics — Behavioral, Managerial, and Welfare — with applications centered on Freight Transportation — Last-Mile Distribution and Long-Haul Logistics.
 
 LogNiti lab invites students, research scholars, and industry professionals to work towards this common mission. <a href="https://lognitilab.github.io/people/">Get in touch!</a>
