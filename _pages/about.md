@@ -18,4 +18,4 @@ A logistics policy (LogNiti) <a href="/assets/audio/ləɡniːˈtɪ.wav" target="
 
 Research at LogNiti Lab is grounded in Transportation Economics -- Behavioral, Managerial, and Welfare -- with applications centered on Freight Transportation -- Last-Mile Distribution and Long-Haul Logistics.
 
-LogNiti lab invites students, research scholars, and industry professionals to work towards this common mission. <a href="https://lognitilab.github.io/people/">Get in touch!</a>
+LogNiti lab invites students, research scholars, and industry professionals to work towards the common goal of sustainable and resilient freight tranpsortation. <a href="https://lognitilab.github.io/people/">Get in touch!</a>
