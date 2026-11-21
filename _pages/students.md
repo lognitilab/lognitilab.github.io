@@ -10,7 +10,7 @@
 <p><strong>Joined:</strong> July 2024</p>
 <p><strong>Status:</strong> Candidacy Achieved</p>
 <p><strong>Domain:</strong> Managerial &amp; Behavioral Economics</p>
-<p><strong>Application:</strong> Last-Mile Operations</p>
+<p><strong>Application:</strong> Last-Mile Distribution</p>
 </div>
 </div>
 </div>
@@ -22,7 +22,7 @@
 <p class="student-degree">PhD Scholar</p>
 <p><strong>Joined:</strong> January 2025</p>
 <p><strong>Status:</strong> Candidacy Achieved</p>
-<p><strong>Domain:</strong> Welfare Economics</p>
+<p><strong>Domain:</strong> Managerial Economics</p>
 <p><strong>Application:</strong> Long-Haul Logistics</p>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <p><strong>Joined:</strong> July 2025</p>
 <p><strong>Status:</strong> Candidacy Pending</p>
 <p><strong>Domain:</strong> Managerial Economics</p>
-<p><strong>Application:</strong> Last-Mile Operations</p>
+<p><strong>Application:</strong> Last-Mile Distribution</p>
 </div>
 </div>
 </div>
@@ -62,7 +62,7 @@
 <p><strong>Joined:</strong> July 2026</p>
 <p><strong>Status:</strong> GTC Established</p>
 <p><strong>Domain:</strong> Managerial Economics</p>
-<p><strong>Application:</strong> Last-Mile Operations</p>
+<p><strong>Application:</strong> Last-Mile Distribution</p>
 </div>
 </div>
 </div>
