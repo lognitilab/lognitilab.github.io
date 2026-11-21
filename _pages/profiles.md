@@ -16,7 +16,7 @@ profiles:
     more_info: >
       <p>+91 44 2257 4275</p>
       <p>anmpahwa[at]iitm[dot]ac[dot]in</p>
-      <p>338 Building Sciences Block</p>
+      <p>338 BSB</p>
       <p>IIT Madras, Chennai</p>
       <p>Tamil Nadu - 600036</p>
   - content: students.md
