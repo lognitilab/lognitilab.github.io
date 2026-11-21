@@ -23,7 +23,7 @@
   role: BTech
   start: 2024-10
   end: 2026-05
-  status: ongoing
+  status: completed
   project: "Simulating Daily Urban Mobility in India: A Markov Chain Approach using Time Use Survey Data"
 
 - name: Stephen Babu
@@ -75,6 +75,13 @@
   status: completed
   project: "Modelling Energy Consumption of Unmanned Aerial Vehicles (UAVs) for Last-Mile Delivery"
 
+- name: Tanish Jambhekar
+  role: BTech
+  start: 2026-01
+  end: 2027-05
+  status: ongoing
+  project: "Designing Optimal Network Configuration using Genetic Algorithm"
+
 - name: Praveen
   role: Intern
   start: 2026-06
@@ -94,4 +101,67 @@
   start: 2026-06
   end: 2027-05
   status: ongoing
-  project: "Assessing Wider Economic Benefits of Transportation Infrastructure Investments (WEB of TransIT)"
+  project: "Arriving within Time and Energy Budget: A Dynamic Routing Framework for Electric Vehicles in Stochastic Networks"
+
+- name: Dhruv Goel
+  role: MTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Physics-Based State-of-Charge Estimation of Electric Buses under Route-Specific Operating Conditions"
+
+- name: Millenium Mahaseth
+  role: MTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "E-commerce Freight Demand Modelling for Bengaluru"
+
+- name: Shivathmika R. H.
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Analysing Active Goods Mobility (AGM) in Chennai: Opportunities and Challenges for Sustainable Urban Freight"
+  
+- name: Share Saharsh Yadav
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "A holistic continuous approximation (CA) in logistics extends classical continuous approximation models"
+  
+- name: Abhishek Rai
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Graph Neural Network-Based Tour Length Estimation for the Capacitated Vehicle Routing Problem"
+
+- name: Aditya Chuadhary
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Energy-Efficient Routing of UAVs in 3D Urban Environments for Last-Mile Delivery"
+  
+- name: Jash Shah Jignesh
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Exploring E-commerce Landscape of Bengaluru"
+  
+- name: Akshith Nemalipuri
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "An Economic Analysis of Task Acceptance, Wage Elasticity, And Labor Mobility Among Gig Workers"
+
+- name: Aurovind Sadangi
+  role: BTech
+  start: 2026-06
+  end: 2027-05
+  status: ongoing
+  project: "Adaptive Bus Fleet Management – Enhancing Efficiency and Resilience under Disruptions"
