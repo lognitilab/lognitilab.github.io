@@ -3,7 +3,7 @@
 <div class="row student-cards">
 <div class="col-12 col-sm-6 col-lg-4 mb-4">
 <div class="student-card">
-<img src="{{ '/assets/img/people/blessy-k.png' | relative_url }}" alt="Blessy K." loading="lazy">
+<img src="/assets/img/people/blessy-k.png" alt="Blessy K." loading="lazy">
 <div class="student-card-body">
 <p class="student-name">Blessy K.</p>
 <p class="student-degree">PhD Scholar</p>
@@ -16,7 +16,7 @@
 </div>
 <div class="col-12 col-sm-6 col-lg-4 mb-4">
 <div class="student-card">
-<img src="{{ '/assets/img/people/stephen-babu.png' | relative_url }}" alt="Stephen Babu" loading="lazy">
+<img src="/assets/img/people/stephen-babu.png" alt="Stephen Babu" loading="lazy">
 <div class="student-card-body">
 <p class="student-name">Stephen Babu</p>
 <p class="student-degree">PhD Scholar</p>
@@ -29,7 +29,7 @@
 </div>
 <div class="col-12 col-sm-6 col-lg-4 mb-4">
 <div class="student-card">
-<img src="{{ '/assets/img/people/naga-sai-panidarapu.png' | relative_url }}" alt="Naga Sai Panidarapu" loading="lazy">
+<img src="/assets/img/people/naga-sai-panidarapu.png" alt="Naga Sai Panidarapu" loading="lazy">
 <div class="student-card-body">
 <p class="student-name">Naga Sai Panidarapu</p>
 <p class="student-degree">PhD Scholar</p>
@@ -42,7 +42,7 @@
 </div>
 <div class="col-12 col-sm-6 col-lg-4 mb-4">
 <div class="student-card">
-<img src="{{ '/assets/img/people/hana-aboobacker.png' | relative_url }}" alt="Hana Aboobacker" loading="lazy">
+<img src="/assets/img/people/hana-aboobacker.png" alt="Hana Aboobacker" loading="lazy">
 <div class="student-card-body">
 <p class="student-name">Hana Aboobacker</p>
 <p class="student-degree">PhD Scholar</p>
@@ -55,7 +55,7 @@
 </div>
 <div class="col-12 col-sm-6 col-lg-4 mb-4">
 <div class="student-card">
-<img src="{{ '/assets/img/people/ranjith-kanna.png' | relative_url }}" alt="A Ranjith Kanna" loading="lazy">
+<img src="/assets/img/people/ranjith-kanna.png" alt="A Ranjith Kanna" loading="lazy">
 <div class="student-card-body">
 <p class="student-name">A Ranjith Kanna</p>
 <p class="student-degree">MS Scholar</p>
