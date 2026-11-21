@@ -55,7 +55,7 @@
 </div>
 <div class="col-12 col-sm-6 col-lg-4 mb-4">
 <div class="student-card">
-<img src="/assets/img/people/ranjith-kanna.png" alt="A Ranjith Kanna" loading="lazy">
+<img src="/assets/img/people/ranjith-kanna.png" alt="Ranjith Kanna" loading="lazy">
 <div class="student-card-body">
 <p class="student-name">A Ranjith Kanna</p>
 <p class="student-degree">MS Scholar</p>
