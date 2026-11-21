@@ -89,6 +89,27 @@
     display: inline-block;
   }
 
+  .timeline-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem 0;
+  }
+
+  .alumni-toggle {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+  }
+
+  .alumni-toggle:hover {
+    background-color: #f0f0f0;
+  }
+
   @media (max-width: 768px) {
     .timeline-header {
       flex-direction: column;
@@ -119,6 +140,10 @@
     </div>
   </div>
 
+  <div class="timeline-controls">
+    <button type="button" id="alumni-toggle" class="alumni-toggle" aria-pressed="false"></button>
+  </div>
+
   <div id="gantt"></div>
 
   <div class="timeline-legend">
@@ -133,7 +158,7 @@
 </div>
 
 <!-- Plotly -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 
 <!-- Timeline Chart Script -->
 <script>
@@ -149,14 +174,14 @@
 
   const rawGanttData = {{ site.data.members | jsonify }};
   const today = new Date();
+  const rowHeight = 24;
+  const verticalMargin = 40; // margin.t + margin.b
 
-  if (!Array.isArray(rawGanttData)) {
-    document.getElementById("gantt").innerText = "Error: Member data is invalid.";
-  } else {
+  function buildBars(members) {
     const pastBars = [];
     const futureBars = [];
 
-    rawGanttData.forEach(member => {
+    members.forEach(member => {
       const start = new Date(member.start + "-01");
       const end = new Date(member.end + "-01");
       const roleColor = roleColors[member.role] || "#888";
@@ -205,16 +230,16 @@
       }
     });
 
-    const data = pastBars.concat(futureBars);
-    const baseHeightPerPerson = 50;
-    const chartHeight = rawGanttData.length * baseHeightPerPerson;
+    return pastBars.concat(futureBars);
+  }
 
-    const layout = {
+  function buildLayout(rowCount) {
+    return {
       title: "",
       barmode: "stack",
       showlegend: false,
-      bargap: 0.05,
-      height: chartHeight,
+      bargap: 0.15,
+      height: rowCount * rowHeight + verticalMargin,
       font: {
         family: "Roboto, sans-serif",
         size: 13,
@@ -240,7 +265,7 @@
       yaxis: {
         automargin: true,
         tickfont: {
-          size: 13
+          size: 12
         }
       },
       shapes: [
@@ -249,12 +274,38 @@
           x0: today,
           x1: today,
           y0: -0.5,
-          y1: rawGanttData.length - 0.5,
+          y1: rowCount - 0.5,
           line: { color: "red", width: 1 }
         },
       ]
     };
+  }
 
-    Plotly.newPlot("gantt", data, layout, { displayModeBar: false });
+  const toggle = document.getElementById("alumni-toggle");
+
+  if (!Array.isArray(rawGanttData)) {
+    document.getElementById("gantt").innerText = "Error: Member data is invalid.";
+    toggle.style.display = "none";
+  } else {
+    const alumniCount = rawGanttData.filter(m => m.status === "completed").length;
+    let showAlumni = false;
+
+    function render() {
+      const members = showAlumni ? rawGanttData : rawGanttData.filter(m => m.status !== "completed");
+      Plotly.react("gantt", buildBars(members), buildLayout(members.length), { displayModeBar: false });
+      toggle.textContent = showAlumni ? "Hide alumni" : `Show alumni (${alumniCount})`;
+      toggle.setAttribute("aria-pressed", String(showAlumni));
+    }
+
+    if (alumniCount === 0) {
+      toggle.style.display = "none";
+    } else {
+      toggle.addEventListener("click", () => {
+        showAlumni = !showAlumni;
+        render();
+      });
+    }
+
+    render();
   }
 </script>
