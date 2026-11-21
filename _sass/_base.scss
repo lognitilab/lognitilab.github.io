@@ -227,6 +227,52 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Student cards (People page)
+
+.student-cards {
+  margin-top: 1rem;
+}
+
+.student-card {
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--global-card-bg-color);
+  border-left: 4px solid var(--global-highlight-color);
+  border-radius: 0.5rem;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: top center;
+    background-color: var(--global-bg-color);
+  }
+
+  .student-card-body {
+    padding: 0.75rem 1rem 1rem;
+
+    p {
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
+    }
+
+    .student-name {
+      margin-bottom: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .student-degree {
+      margin-bottom: 0.5rem;
+      color: var(--global-text-color-light);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
