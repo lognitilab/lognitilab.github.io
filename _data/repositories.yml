@@ -12,6 +12,7 @@ github_tools:
   - anmpahwa/TSP.jl
   - anmpahwa/eVRP.jl
   - anmpahwa/LRP.jl
+  - anmpahwa/CVRP.jl
   - HarshBerg/mALNS.jl
 
 github_projects:
