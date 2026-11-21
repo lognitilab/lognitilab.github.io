@@ -1,7 +1,7 @@
 ---
 layout: course
 title: CE5xx1
-description: An introduction to transportat economics, covering consumer and firm behaviour, market failures, government intervention, and general equilibrium in the transportat sector.
+description: An introduction to transport economics, covering consumer and firm behaviour, market failures, government intervention, and general equilibrium in the transport sector.
 instructor: Dr. Anmol Pahwa
 course_id: ce5xx1
 ---
@@ -13,7 +13,7 @@ course_id: ce5xx1
 3. To identify market failures in the transportation sector and design appropriate government intervention
 4. To evaluate the outcomes of interaction between the consumer, firms, and the government in the transportation sector.
 
-### Course Contents
+### Course Content
 
 1. Household (समाज/சமூகம்): Theory of Consumer Choice – fundamental axioms, utility maximisation, individual/aggregate modelling of transportation demand
 2. Firms (व्यापार/வணிகம்): Theory of Firm Production – economic viability: fixed and operational cost of transportation, cost minimisation/profit maximisation, individual/aggregate modelling of transportation supply

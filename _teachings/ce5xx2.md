@@ -8,12 +8,11 @@ course_id: ce5xx2
 
 ### Objectives
 
-### Course Contents
+### Course Content
 
 ### Textbooks
 
 ### Reference Books
-
 
 ### Lectures
 
